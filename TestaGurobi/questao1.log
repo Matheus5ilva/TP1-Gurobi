@@ -1,0 +1,138 @@
+
+Gurobi 9.1.0 (win64, Java) logging started Sun Nov 15 16:40:40 2020
+
+Academic license - for non-commercial use only - expires 2021-01-13
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Model fingerprint: 0x4751101e
+Variable types: 0 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e+00, 6e+01]
+Found heuristic solution: objective 7.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.08 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.0 (win64, Java) logging started Sun Nov 15 16:41:06 2020
+
+Academic license - for non-commercial use only - expires 2021-01-13
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Model fingerprint: 0x4751101e
+Variable types: 0 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e+00, 6e+01]
+Found heuristic solution: objective 7.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.0 (win64, Java) logging started Sun Nov 15 16:41:55 2020
+
+Academic license - for non-commercial use only - expires 2021-01-13
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Model fingerprint: 0x4751101e
+Variable types: 0 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e+00, 6e+01]
+Found heuristic solution: objective 7.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.0 (win64, Java) logging started Sun Nov 15 16:45:36 2020
+
+Academic license - for non-commercial use only - expires 2021-01-13
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Model fingerprint: 0x4751101e
+Variable types: 0 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e+00, 6e+01]
+Found heuristic solution: objective 7.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.0 (win64, Java) logging started Mon Nov 16 19:53:38 2020
+
+Academic license - for non-commercial use only - expires 2021-01-13
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Model fingerprint: 0x4751101e
+Variable types: 0 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e+00, 6e+01]
+Found heuristic solution: objective 7.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.0 (win64, Java) logging started Mon Nov 16 22:14:37 2020
+
+Academic license - for non-commercial use only - expires 2021-01-13
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Model fingerprint: 0x4751101e
+Variable types: 0 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e+00, 6e+01]
+Found heuristic solution: objective 7.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%

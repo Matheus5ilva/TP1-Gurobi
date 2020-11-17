@@ -1,0 +1,3218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GRB
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="GRB";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../gurobi/GRB.BatchStatus.html" title="class in gurobi"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GRB.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GRB.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#methods_inherited_from_class_java.lang.Object">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;METHOD</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+gurobi</FONT>
+<BR>
+Class GRB</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../resources/inherit.gif" ALT="extended by "><B>gurobi.GRB</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>GRB</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Class for Java enums and constants. The enums are used to get or set
+ Gurobi attributes or parameters.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.BatchStatus.html" title="class in gurobi">GRB.BatchStatus</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.Callback.html" title="class in gurobi">GRB.Callback</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.CharAttr.html" title="enum in gurobi">GRB.CharAttr</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.DoubleAttr.html" title="enum in gurobi">GRB.DoubleAttr</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.Error.html" title="class in gurobi">GRB.Error</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.IntAttr.html" title="enum in gurobi">GRB.IntAttr</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.Status.html" title="class in gurobi">GRB.Status</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.StringAttr.html" title="enum in gurobi">GRB.StringAttr</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ABORTED">ABORTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#BARORDER_AMD">BARORDER_AMD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#BARORDER_AUTOMATIC">BARORDER_AUTOMATIC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#BARORDER_NESTEDDISSECTION">BARORDER_NESTEDDISSECTION</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#BASIC">BASIC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#BINARY">BINARY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER">CB_BARRIER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER_COMPL">CB_BARRIER_COMPL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER_DUALINF">CB_BARRIER_DUALINF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER_DUALOBJ">CB_BARRIER_DUALOBJ</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER_ITRCNT">CB_BARRIER_ITRCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER_PRIMINF">CB_BARRIER_PRIMINF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_BARRIER_PRIMOBJ">CB_BARRIER_PRIMOBJ</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MESSAGE">CB_MESSAGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP">CB_MIP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_CUTCNT">CB_MIP_CUTCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_ITRCNT">CB_MIP_ITRCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_NODCNT">CB_MIP_NODCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_NODLFT">CB_MIP_NODLFT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_OBJBND">CB_MIP_OBJBND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_OBJBST">CB_MIP_OBJBST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIP_SOLCNT">CB_MIP_SOLCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE">CB_MIPNODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_BRVAR">CB_MIPNODE_BRVAR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_NODCNT">CB_MIPNODE_NODCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_OBJBND">CB_MIPNODE_OBJBND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_OBJBST">CB_MIPNODE_OBJBST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_REL">CB_MIPNODE_REL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_SOLCNT">CB_MIPNODE_SOLCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPNODE_STATUS">CB_MIPNODE_STATUS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL">CB_MIPSOL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL_NODCNT">CB_MIPSOL_NODCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL_OBJ">CB_MIPSOL_OBJ</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL_OBJBND">CB_MIPSOL_OBJBND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL_OBJBST">CB_MIPSOL_OBJBST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL_SOL">CB_MIPSOL_SOL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MIPSOL_SOLCNT">CB_MIPSOL_SOLCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MSG_STRING">CB_MSG_STRING</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MULTIOBJ">CB_MULTIOBJ</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MULTIOBJ_OBJCNT">CB_MULTIOBJ_OBJCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MULTIOBJ_SOL">CB_MULTIOBJ_SOL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_MULTIOBJ_SOLCNT">CB_MULTIOBJ_SOLCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_POLLING">CB_POLLING</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_PRE_BNDCHG">CB_PRE_BNDCHG</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_PRE_COECHG">CB_PRE_COECHG</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_PRE_COLDEL">CB_PRE_COLDEL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_PRE_ROWDEL">CB_PRE_ROWDEL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_PRE_SENCHG">CB_PRE_SENCHG</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_PRESOLVE">CB_PRESOLVE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_RUNTIME">CB_RUNTIME</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_SIMPLEX">CB_SIMPLEX</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_SPX_DUALINF">CB_SPX_DUALINF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_SPX_ISPERT">CB_SPX_ISPERT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_SPX_ITRCNT">CB_SPX_ITRCNT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_SPX_OBJVAL">CB_SPX_OBJVAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CB_SPX_PRIMINF">CB_SPX_PRIMINF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#COMPLETED">COMPLETED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CONTINUOUS">CONTINUOUS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CREATED">CREATED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CUTOFF">CUTOFF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CUTS_AGGRESSIVE">CUTS_AGGRESSIVE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CUTS_AUTO">CUTS_AUTO</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CUTS_CONSERVATIVE">CUTS_CONSERVATIVE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CUTS_OFF">CUTS_OFF</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#CUTS_VERYAGGRESSIVE">CUTS_VERYAGGRESSIVE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#DEFAULT_CS_PORT">DEFAULT_CS_PORT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#EQUAL">EQUAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_CALLBACK">ERROR_CALLBACK</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_CLOUD">ERROR_CLOUD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_CSWORKER">ERROR_CSWORKER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_DATA_NOT_AVAILABLE">ERROR_DATA_NOT_AVAILABLE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_DUPLICATES">ERROR_DUPLICATES</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_EXCEED_2B_NONZEROS">ERROR_EXCEED_2B_NONZEROS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_FAILED_TO_CREATE_MODEL">ERROR_FAILED_TO_CREATE_MODEL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_FILE_READ">ERROR_FILE_READ</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_FILE_WRITE">ERROR_FILE_WRITE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_IIS_NOT_INFEASIBLE">ERROR_IIS_NOT_INFEASIBLE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_INDEX_OUT_OF_RANGE">ERROR_INDEX_OUT_OF_RANGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_INTERNAL">ERROR_INTERNAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_INVALID_ARGUMENT">ERROR_INVALID_ARGUMENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_INVALID_PIECEWISE_OBJ">ERROR_INVALID_PIECEWISE_OBJ</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_JOB_REJECTED">ERROR_JOB_REJECTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_MODEL_MODIFICATION">ERROR_MODEL_MODIFICATION</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NETWORK">ERROR_NETWORK</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NO_LICENSE">ERROR_NO_LICENSE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NODEFILE">ERROR_NODEFILE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NOT_FOR_MIP">ERROR_NOT_FOR_MIP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NOT_IN_MODEL">ERROR_NOT_IN_MODEL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NOT_SUPPORTED">ERROR_NOT_SUPPORTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NULL_ARGUMENT">ERROR_NULL_ARGUMENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_NUMERIC">ERROR_NUMERIC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_OPTIMIZATION_IN_PROGRESS">ERROR_OPTIMIZATION_IN_PROGRESS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_OUT_OF_MEMORY">ERROR_OUT_OF_MEMORY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_Q_NOT_PSD">ERROR_Q_NOT_PSD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_QCP_EQUALITY_CONSTRAINT">ERROR_QCP_EQUALITY_CONSTRAINT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_SECURITY">ERROR_SECURITY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_SIZE_LIMIT_EXCEEDED">ERROR_SIZE_LIMIT_EXCEEDED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_TUNE_MODEL_TYPES">ERROR_TUNE_MODEL_TYPES</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_UNKNOWN_ATTRIBUTE">ERROR_UNKNOWN_ATTRIBUTE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_UNKNOWN_PARAMETER">ERROR_UNKNOWN_PARAMETER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_UPDATEMODE_CHANGE">ERROR_UPDATEMODE_CHANGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ERROR_VALUE_OUT_OF_RANGE">ERROR_VALUE_OUT_OF_RANGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#FAILED">FAILED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#FEASRELAX_CARDINALITY">FEASRELAX_CARDINALITY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#FEASRELAX_LINEAR">FEASRELAX_LINEAR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#FEASRELAX_QUADRATIC">FEASRELAX_QUADRATIC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_ABS">GENCONSTR_ABS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_AND">GENCONSTR_AND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_COS">GENCONSTR_COS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_EXP">GENCONSTR_EXP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_EXPA">GENCONSTR_EXPA</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_INDICATOR">GENCONSTR_INDICATOR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_LOG">GENCONSTR_LOG</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_LOGA">GENCONSTR_LOGA</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_MAX">GENCONSTR_MAX</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_MIN">GENCONSTR_MIN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_OR">GENCONSTR_OR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_POLY">GENCONSTR_POLY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_POW">GENCONSTR_POW</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_PWL">GENCONSTR_PWL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_SIN">GENCONSTR_SIN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GENCONSTR_TAN">GENCONSTR_TAN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GREATER_EQUAL">GREATER_EQUAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#INF_OR_UNBD">INF_OR_UNBD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#INFEASIBLE">INFEASIBLE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#INFINITY">INFINITY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#INPROGRESS">INPROGRESS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#INTEGER">INTEGER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#INTERRUPTED">INTERRUPTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#ITERATION_LIMIT">ITERATION_LIMIT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#LESS_EQUAL">LESS_EQUAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#LOADED">LOADED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#MAXIMIZE">MAXIMIZE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#METHOD_AUTO">METHOD_AUTO</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#METHOD_BARRIER">METHOD_BARRIER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#METHOD_CONCURRENT">METHOD_CONCURRENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#METHOD_DETERMINISTIC_CONCURRENT">METHOD_DETERMINISTIC_CONCURRENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#METHOD_DUAL">METHOD_DUAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#METHOD_PRIMAL">METHOD_PRIMAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#MINIMIZE">MINIMIZE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#NODE_LIMIT">NODE_LIMIT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#NONBASIC_LOWER">NONBASIC_LOWER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#NONBASIC_UPPER">NONBASIC_UPPER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#NUMERIC">NUMERIC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#OPTIMAL">OPTIMAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SEMICONT">SEMICONT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;char</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SEMIINT">SEMIINT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SOLUTION_LIMIT">SOLUTION_LIMIT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SOS_TYPE1">SOS_TYPE1</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SOS_TYPE2">SOS_TYPE2</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SUBMITTED">SUBMITTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SUBOPTIMAL">SUBOPTIMAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#SUPERBASIC">SUPERBASIC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#TIME_LIMIT">TIME_LIMIT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#UNBOUNDED">UNBOUNDED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#UNDEFINED">UNDEFINED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#USER_OBJ_LIMIT">USER_OBJ_LIMIT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#VERSION_MAJOR">VERSION_MAJOR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#VERSION_MINOR">VERSION_MINOR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRB.html#VERSION_TECHNICAL">VERSION_TECHNICAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRB.html#GRB()">GRB</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="LOADED"><!-- --></A><H3>
+LOADED</H3>
+<PRE>
+public static final int <B>LOADED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.LOADED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="OPTIMAL"><!-- --></A><H3>
+OPTIMAL</H3>
+<PRE>
+public static final int <B>OPTIMAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.OPTIMAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INFEASIBLE"><!-- --></A><H3>
+INFEASIBLE</H3>
+<PRE>
+public static final int <B>INFEASIBLE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.INFEASIBLE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INF_OR_UNBD"><!-- --></A><H3>
+INF_OR_UNBD</H3>
+<PRE>
+public static final int <B>INF_OR_UNBD</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.INF_OR_UNBD">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="UNBOUNDED"><!-- --></A><H3>
+UNBOUNDED</H3>
+<PRE>
+public static final int <B>UNBOUNDED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.UNBOUNDED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CUTOFF"><!-- --></A><H3>
+CUTOFF</H3>
+<PRE>
+public static final int <B>CUTOFF</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CUTOFF">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ITERATION_LIMIT"><!-- --></A><H3>
+ITERATION_LIMIT</H3>
+<PRE>
+public static final int <B>ITERATION_LIMIT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ITERATION_LIMIT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="NODE_LIMIT"><!-- --></A><H3>
+NODE_LIMIT</H3>
+<PRE>
+public static final int <B>NODE_LIMIT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.NODE_LIMIT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="TIME_LIMIT"><!-- --></A><H3>
+TIME_LIMIT</H3>
+<PRE>
+public static final int <B>TIME_LIMIT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.TIME_LIMIT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SOLUTION_LIMIT"><!-- --></A><H3>
+SOLUTION_LIMIT</H3>
+<PRE>
+public static final int <B>SOLUTION_LIMIT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SOLUTION_LIMIT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INTERRUPTED"><!-- --></A><H3>
+INTERRUPTED</H3>
+<PRE>
+public static final int <B>INTERRUPTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.INTERRUPTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="NUMERIC"><!-- --></A><H3>
+NUMERIC</H3>
+<PRE>
+public static final int <B>NUMERIC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.NUMERIC">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SUBOPTIMAL"><!-- --></A><H3>
+SUBOPTIMAL</H3>
+<PRE>
+public static final int <B>SUBOPTIMAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SUBOPTIMAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INPROGRESS"><!-- --></A><H3>
+INPROGRESS</H3>
+<PRE>
+public static final int <B>INPROGRESS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.INPROGRESS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="USER_OBJ_LIMIT"><!-- --></A><H3>
+USER_OBJ_LIMIT</H3>
+<PRE>
+public static final int <B>USER_OBJ_LIMIT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.USER_OBJ_LIMIT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CREATED"><!-- --></A><H3>
+CREATED</H3>
+<PRE>
+public static final int <B>CREATED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CREATED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SUBMITTED"><!-- --></A><H3>
+SUBMITTED</H3>
+<PRE>
+public static final int <B>SUBMITTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SUBMITTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ABORTED"><!-- --></A><H3>
+ABORTED</H3>
+<PRE>
+public static final int <B>ABORTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ABORTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FAILED"><!-- --></A><H3>
+FAILED</H3>
+<PRE>
+public static final int <B>FAILED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.FAILED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="COMPLETED"><!-- --></A><H3>
+COMPLETED</H3>
+<PRE>
+public static final int <B>COMPLETED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.COMPLETED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="VERSION_MAJOR"><!-- --></A><H3>
+VERSION_MAJOR</H3>
+<PRE>
+public static final int <B>VERSION_MAJOR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.VERSION_MAJOR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="VERSION_MINOR"><!-- --></A><H3>
+VERSION_MINOR</H3>
+<PRE>
+public static final int <B>VERSION_MINOR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.VERSION_MINOR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="VERSION_TECHNICAL"><!-- --></A><H3>
+VERSION_TECHNICAL</H3>
+<PRE>
+public static final int <B>VERSION_TECHNICAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.VERSION_TECHNICAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="BASIC"><!-- --></A><H3>
+BASIC</H3>
+<PRE>
+public static final int <B>BASIC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.BASIC">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="NONBASIC_LOWER"><!-- --></A><H3>
+NONBASIC_LOWER</H3>
+<PRE>
+public static final int <B>NONBASIC_LOWER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.NONBASIC_LOWER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="NONBASIC_UPPER"><!-- --></A><H3>
+NONBASIC_UPPER</H3>
+<PRE>
+public static final int <B>NONBASIC_UPPER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.NONBASIC_UPPER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SUPERBASIC"><!-- --></A><H3>
+SUPERBASIC</H3>
+<PRE>
+public static final int <B>SUPERBASIC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SUPERBASIC">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="LESS_EQUAL"><!-- --></A><H3>
+LESS_EQUAL</H3>
+<PRE>
+public static final char <B>LESS_EQUAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.LESS_EQUAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GREATER_EQUAL"><!-- --></A><H3>
+GREATER_EQUAL</H3>
+<PRE>
+public static final char <B>GREATER_EQUAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GREATER_EQUAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="EQUAL"><!-- --></A><H3>
+EQUAL</H3>
+<PRE>
+public static final char <B>EQUAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.EQUAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CONTINUOUS"><!-- --></A><H3>
+CONTINUOUS</H3>
+<PRE>
+public static final char <B>CONTINUOUS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CONTINUOUS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="BINARY"><!-- --></A><H3>
+BINARY</H3>
+<PRE>
+public static final char <B>BINARY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.BINARY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INTEGER"><!-- --></A><H3>
+INTEGER</H3>
+<PRE>
+public static final char <B>INTEGER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.INTEGER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SEMICONT"><!-- --></A><H3>
+SEMICONT</H3>
+<PRE>
+public static final char <B>SEMICONT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SEMICONT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SEMIINT"><!-- --></A><H3>
+SEMIINT</H3>
+<PRE>
+public static final char <B>SEMIINT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SEMIINT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MINIMIZE"><!-- --></A><H3>
+MINIMIZE</H3>
+<PRE>
+public static final int <B>MINIMIZE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.MINIMIZE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MAXIMIZE"><!-- --></A><H3>
+MAXIMIZE</H3>
+<PRE>
+public static final int <B>MAXIMIZE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.MAXIMIZE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SOS_TYPE1"><!-- --></A><H3>
+SOS_TYPE1</H3>
+<PRE>
+public static final int <B>SOS_TYPE1</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SOS_TYPE1">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SOS_TYPE2"><!-- --></A><H3>
+SOS_TYPE2</H3>
+<PRE>
+public static final int <B>SOS_TYPE2</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.SOS_TYPE2">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_MAX"><!-- --></A><H3>
+GENCONSTR_MAX</H3>
+<PRE>
+public static final int <B>GENCONSTR_MAX</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_MAX">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_MIN"><!-- --></A><H3>
+GENCONSTR_MIN</H3>
+<PRE>
+public static final int <B>GENCONSTR_MIN</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_MIN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_ABS"><!-- --></A><H3>
+GENCONSTR_ABS</H3>
+<PRE>
+public static final int <B>GENCONSTR_ABS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_ABS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_AND"><!-- --></A><H3>
+GENCONSTR_AND</H3>
+<PRE>
+public static final int <B>GENCONSTR_AND</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_AND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_OR"><!-- --></A><H3>
+GENCONSTR_OR</H3>
+<PRE>
+public static final int <B>GENCONSTR_OR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_OR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_INDICATOR"><!-- --></A><H3>
+GENCONSTR_INDICATOR</H3>
+<PRE>
+public static final int <B>GENCONSTR_INDICATOR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_INDICATOR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_PWL"><!-- --></A><H3>
+GENCONSTR_PWL</H3>
+<PRE>
+public static final int <B>GENCONSTR_PWL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_PWL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_POLY"><!-- --></A><H3>
+GENCONSTR_POLY</H3>
+<PRE>
+public static final int <B>GENCONSTR_POLY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_POLY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_EXP"><!-- --></A><H3>
+GENCONSTR_EXP</H3>
+<PRE>
+public static final int <B>GENCONSTR_EXP</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_EXP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_EXPA"><!-- --></A><H3>
+GENCONSTR_EXPA</H3>
+<PRE>
+public static final int <B>GENCONSTR_EXPA</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_EXPA">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_LOG"><!-- --></A><H3>
+GENCONSTR_LOG</H3>
+<PRE>
+public static final int <B>GENCONSTR_LOG</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_LOG">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_LOGA"><!-- --></A><H3>
+GENCONSTR_LOGA</H3>
+<PRE>
+public static final int <B>GENCONSTR_LOGA</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_LOGA">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_POW"><!-- --></A><H3>
+GENCONSTR_POW</H3>
+<PRE>
+public static final int <B>GENCONSTR_POW</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_POW">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_SIN"><!-- --></A><H3>
+GENCONSTR_SIN</H3>
+<PRE>
+public static final int <B>GENCONSTR_SIN</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_SIN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_COS"><!-- --></A><H3>
+GENCONSTR_COS</H3>
+<PRE>
+public static final int <B>GENCONSTR_COS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_COS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GENCONSTR_TAN"><!-- --></A><H3>
+GENCONSTR_TAN</H3>
+<PRE>
+public static final int <B>GENCONSTR_TAN</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.GENCONSTR_TAN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INFINITY"><!-- --></A><H3>
+INFINITY</H3>
+<PRE>
+public static final double <B>INFINITY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.INFINITY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="UNDEFINED"><!-- --></A><H3>
+UNDEFINED</H3>
+<PRE>
+public static final double <B>UNDEFINED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.UNDEFINED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="DEFAULT_CS_PORT"><!-- --></A><H3>
+DEFAULT_CS_PORT</H3>
+<PRE>
+public static final int <B>DEFAULT_CS_PORT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.DEFAULT_CS_PORT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_POLLING"><!-- --></A><H3>
+CB_POLLING</H3>
+<PRE>
+public static final int <B>CB_POLLING</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_POLLING">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_PRESOLVE"><!-- --></A><H3>
+CB_PRESOLVE</H3>
+<PRE>
+public static final int <B>CB_PRESOLVE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_PRESOLVE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_SIMPLEX"><!-- --></A><H3>
+CB_SIMPLEX</H3>
+<PRE>
+public static final int <B>CB_SIMPLEX</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_SIMPLEX">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP"><!-- --></A><H3>
+CB_MIP</H3>
+<PRE>
+public static final int <B>CB_MIP</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL"><!-- --></A><H3>
+CB_MIPSOL</H3>
+<PRE>
+public static final int <B>CB_MIPSOL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE"><!-- --></A><H3>
+CB_MIPNODE</H3>
+<PRE>
+public static final int <B>CB_MIPNODE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MESSAGE"><!-- --></A><H3>
+CB_MESSAGE</H3>
+<PRE>
+public static final int <B>CB_MESSAGE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MESSAGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER"><!-- --></A><H3>
+CB_BARRIER</H3>
+<PRE>
+public static final int <B>CB_BARRIER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MULTIOBJ"><!-- --></A><H3>
+CB_MULTIOBJ</H3>
+<PRE>
+public static final int <B>CB_MULTIOBJ</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MULTIOBJ">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_PRE_COLDEL"><!-- --></A><H3>
+CB_PRE_COLDEL</H3>
+<PRE>
+public static final int <B>CB_PRE_COLDEL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_PRE_COLDEL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_PRE_ROWDEL"><!-- --></A><H3>
+CB_PRE_ROWDEL</H3>
+<PRE>
+public static final int <B>CB_PRE_ROWDEL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_PRE_ROWDEL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_PRE_SENCHG"><!-- --></A><H3>
+CB_PRE_SENCHG</H3>
+<PRE>
+public static final int <B>CB_PRE_SENCHG</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_PRE_SENCHG">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_PRE_BNDCHG"><!-- --></A><H3>
+CB_PRE_BNDCHG</H3>
+<PRE>
+public static final int <B>CB_PRE_BNDCHG</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_PRE_BNDCHG">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_PRE_COECHG"><!-- --></A><H3>
+CB_PRE_COECHG</H3>
+<PRE>
+public static final int <B>CB_PRE_COECHG</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_PRE_COECHG">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_SPX_ITRCNT"><!-- --></A><H3>
+CB_SPX_ITRCNT</H3>
+<PRE>
+public static final int <B>CB_SPX_ITRCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_SPX_ITRCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_SPX_OBJVAL"><!-- --></A><H3>
+CB_SPX_OBJVAL</H3>
+<PRE>
+public static final int <B>CB_SPX_OBJVAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_SPX_OBJVAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_SPX_PRIMINF"><!-- --></A><H3>
+CB_SPX_PRIMINF</H3>
+<PRE>
+public static final int <B>CB_SPX_PRIMINF</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_SPX_PRIMINF">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_SPX_DUALINF"><!-- --></A><H3>
+CB_SPX_DUALINF</H3>
+<PRE>
+public static final int <B>CB_SPX_DUALINF</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_SPX_DUALINF">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_SPX_ISPERT"><!-- --></A><H3>
+CB_SPX_ISPERT</H3>
+<PRE>
+public static final int <B>CB_SPX_ISPERT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_SPX_ISPERT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_OBJBST"><!-- --></A><H3>
+CB_MIP_OBJBST</H3>
+<PRE>
+public static final int <B>CB_MIP_OBJBST</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_OBJBST">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_OBJBND"><!-- --></A><H3>
+CB_MIP_OBJBND</H3>
+<PRE>
+public static final int <B>CB_MIP_OBJBND</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_OBJBND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_NODCNT"><!-- --></A><H3>
+CB_MIP_NODCNT</H3>
+<PRE>
+public static final int <B>CB_MIP_NODCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_NODCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_SOLCNT"><!-- --></A><H3>
+CB_MIP_SOLCNT</H3>
+<PRE>
+public static final int <B>CB_MIP_SOLCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_SOLCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_CUTCNT"><!-- --></A><H3>
+CB_MIP_CUTCNT</H3>
+<PRE>
+public static final int <B>CB_MIP_CUTCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_CUTCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_NODLFT"><!-- --></A><H3>
+CB_MIP_NODLFT</H3>
+<PRE>
+public static final int <B>CB_MIP_NODLFT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_NODLFT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIP_ITRCNT"><!-- --></A><H3>
+CB_MIP_ITRCNT</H3>
+<PRE>
+public static final int <B>CB_MIP_ITRCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIP_ITRCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL_SOL"><!-- --></A><H3>
+CB_MIPSOL_SOL</H3>
+<PRE>
+public static final int <B>CB_MIPSOL_SOL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL_SOL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL_OBJ"><!-- --></A><H3>
+CB_MIPSOL_OBJ</H3>
+<PRE>
+public static final int <B>CB_MIPSOL_OBJ</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL_OBJ">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL_OBJBST"><!-- --></A><H3>
+CB_MIPSOL_OBJBST</H3>
+<PRE>
+public static final int <B>CB_MIPSOL_OBJBST</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL_OBJBST">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL_OBJBND"><!-- --></A><H3>
+CB_MIPSOL_OBJBND</H3>
+<PRE>
+public static final int <B>CB_MIPSOL_OBJBND</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL_OBJBND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL_NODCNT"><!-- --></A><H3>
+CB_MIPSOL_NODCNT</H3>
+<PRE>
+public static final int <B>CB_MIPSOL_NODCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL_NODCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPSOL_SOLCNT"><!-- --></A><H3>
+CB_MIPSOL_SOLCNT</H3>
+<PRE>
+public static final int <B>CB_MIPSOL_SOLCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPSOL_SOLCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_STATUS"><!-- --></A><H3>
+CB_MIPNODE_STATUS</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_STATUS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_STATUS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_REL"><!-- --></A><H3>
+CB_MIPNODE_REL</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_REL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_REL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_OBJBST"><!-- --></A><H3>
+CB_MIPNODE_OBJBST</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_OBJBST</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_OBJBST">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_OBJBND"><!-- --></A><H3>
+CB_MIPNODE_OBJBND</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_OBJBND</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_OBJBND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_NODCNT"><!-- --></A><H3>
+CB_MIPNODE_NODCNT</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_NODCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_NODCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_SOLCNT"><!-- --></A><H3>
+CB_MIPNODE_SOLCNT</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_SOLCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_SOLCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MIPNODE_BRVAR"><!-- --></A><H3>
+CB_MIPNODE_BRVAR</H3>
+<PRE>
+public static final int <B>CB_MIPNODE_BRVAR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MIPNODE_BRVAR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MSG_STRING"><!-- --></A><H3>
+CB_MSG_STRING</H3>
+<PRE>
+public static final int <B>CB_MSG_STRING</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MSG_STRING">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_RUNTIME"><!-- --></A><H3>
+CB_RUNTIME</H3>
+<PRE>
+public static final int <B>CB_RUNTIME</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_RUNTIME">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER_ITRCNT"><!-- --></A><H3>
+CB_BARRIER_ITRCNT</H3>
+<PRE>
+public static final int <B>CB_BARRIER_ITRCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER_ITRCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER_PRIMOBJ"><!-- --></A><H3>
+CB_BARRIER_PRIMOBJ</H3>
+<PRE>
+public static final int <B>CB_BARRIER_PRIMOBJ</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER_PRIMOBJ">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER_DUALOBJ"><!-- --></A><H3>
+CB_BARRIER_DUALOBJ</H3>
+<PRE>
+public static final int <B>CB_BARRIER_DUALOBJ</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER_DUALOBJ">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER_PRIMINF"><!-- --></A><H3>
+CB_BARRIER_PRIMINF</H3>
+<PRE>
+public static final int <B>CB_BARRIER_PRIMINF</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER_PRIMINF">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER_DUALINF"><!-- --></A><H3>
+CB_BARRIER_DUALINF</H3>
+<PRE>
+public static final int <B>CB_BARRIER_DUALINF</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER_DUALINF">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_BARRIER_COMPL"><!-- --></A><H3>
+CB_BARRIER_COMPL</H3>
+<PRE>
+public static final int <B>CB_BARRIER_COMPL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_BARRIER_COMPL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MULTIOBJ_OBJCNT"><!-- --></A><H3>
+CB_MULTIOBJ_OBJCNT</H3>
+<PRE>
+public static final int <B>CB_MULTIOBJ_OBJCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MULTIOBJ_OBJCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MULTIOBJ_SOLCNT"><!-- --></A><H3>
+CB_MULTIOBJ_SOLCNT</H3>
+<PRE>
+public static final int <B>CB_MULTIOBJ_SOLCNT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MULTIOBJ_SOLCNT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CB_MULTIOBJ_SOL"><!-- --></A><H3>
+CB_MULTIOBJ_SOL</H3>
+<PRE>
+public static final int <B>CB_MULTIOBJ_SOL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CB_MULTIOBJ_SOL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_OUT_OF_MEMORY"><!-- --></A><H3>
+ERROR_OUT_OF_MEMORY</H3>
+<PRE>
+public static final int <B>ERROR_OUT_OF_MEMORY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_OUT_OF_MEMORY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NULL_ARGUMENT"><!-- --></A><H3>
+ERROR_NULL_ARGUMENT</H3>
+<PRE>
+public static final int <B>ERROR_NULL_ARGUMENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NULL_ARGUMENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_INVALID_ARGUMENT"><!-- --></A><H3>
+ERROR_INVALID_ARGUMENT</H3>
+<PRE>
+public static final int <B>ERROR_INVALID_ARGUMENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_INVALID_ARGUMENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_UNKNOWN_ATTRIBUTE"><!-- --></A><H3>
+ERROR_UNKNOWN_ATTRIBUTE</H3>
+<PRE>
+public static final int <B>ERROR_UNKNOWN_ATTRIBUTE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_UNKNOWN_ATTRIBUTE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_DATA_NOT_AVAILABLE"><!-- --></A><H3>
+ERROR_DATA_NOT_AVAILABLE</H3>
+<PRE>
+public static final int <B>ERROR_DATA_NOT_AVAILABLE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_DATA_NOT_AVAILABLE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_INDEX_OUT_OF_RANGE"><!-- --></A><H3>
+ERROR_INDEX_OUT_OF_RANGE</H3>
+<PRE>
+public static final int <B>ERROR_INDEX_OUT_OF_RANGE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_INDEX_OUT_OF_RANGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_UNKNOWN_PARAMETER"><!-- --></A><H3>
+ERROR_UNKNOWN_PARAMETER</H3>
+<PRE>
+public static final int <B>ERROR_UNKNOWN_PARAMETER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_UNKNOWN_PARAMETER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_VALUE_OUT_OF_RANGE"><!-- --></A><H3>
+ERROR_VALUE_OUT_OF_RANGE</H3>
+<PRE>
+public static final int <B>ERROR_VALUE_OUT_OF_RANGE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_VALUE_OUT_OF_RANGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NO_LICENSE"><!-- --></A><H3>
+ERROR_NO_LICENSE</H3>
+<PRE>
+public static final int <B>ERROR_NO_LICENSE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NO_LICENSE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_SIZE_LIMIT_EXCEEDED"><!-- --></A><H3>
+ERROR_SIZE_LIMIT_EXCEEDED</H3>
+<PRE>
+public static final int <B>ERROR_SIZE_LIMIT_EXCEEDED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_SIZE_LIMIT_EXCEEDED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_CALLBACK"><!-- --></A><H3>
+ERROR_CALLBACK</H3>
+<PRE>
+public static final int <B>ERROR_CALLBACK</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_CALLBACK">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_FILE_READ"><!-- --></A><H3>
+ERROR_FILE_READ</H3>
+<PRE>
+public static final int <B>ERROR_FILE_READ</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_FILE_READ">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_FILE_WRITE"><!-- --></A><H3>
+ERROR_FILE_WRITE</H3>
+<PRE>
+public static final int <B>ERROR_FILE_WRITE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_FILE_WRITE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NUMERIC"><!-- --></A><H3>
+ERROR_NUMERIC</H3>
+<PRE>
+public static final int <B>ERROR_NUMERIC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NUMERIC">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_IIS_NOT_INFEASIBLE"><!-- --></A><H3>
+ERROR_IIS_NOT_INFEASIBLE</H3>
+<PRE>
+public static final int <B>ERROR_IIS_NOT_INFEASIBLE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_IIS_NOT_INFEASIBLE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NOT_FOR_MIP"><!-- --></A><H3>
+ERROR_NOT_FOR_MIP</H3>
+<PRE>
+public static final int <B>ERROR_NOT_FOR_MIP</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NOT_FOR_MIP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_OPTIMIZATION_IN_PROGRESS"><!-- --></A><H3>
+ERROR_OPTIMIZATION_IN_PROGRESS</H3>
+<PRE>
+public static final int <B>ERROR_OPTIMIZATION_IN_PROGRESS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_OPTIMIZATION_IN_PROGRESS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_DUPLICATES"><!-- --></A><H3>
+ERROR_DUPLICATES</H3>
+<PRE>
+public static final int <B>ERROR_DUPLICATES</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_DUPLICATES">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NODEFILE"><!-- --></A><H3>
+ERROR_NODEFILE</H3>
+<PRE>
+public static final int <B>ERROR_NODEFILE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NODEFILE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_Q_NOT_PSD"><!-- --></A><H3>
+ERROR_Q_NOT_PSD</H3>
+<PRE>
+public static final int <B>ERROR_Q_NOT_PSD</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_Q_NOT_PSD">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_QCP_EQUALITY_CONSTRAINT"><!-- --></A><H3>
+ERROR_QCP_EQUALITY_CONSTRAINT</H3>
+<PRE>
+public static final int <B>ERROR_QCP_EQUALITY_CONSTRAINT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_QCP_EQUALITY_CONSTRAINT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NETWORK"><!-- --></A><H3>
+ERROR_NETWORK</H3>
+<PRE>
+public static final int <B>ERROR_NETWORK</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NETWORK">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_JOB_REJECTED"><!-- --></A><H3>
+ERROR_JOB_REJECTED</H3>
+<PRE>
+public static final int <B>ERROR_JOB_REJECTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_JOB_REJECTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NOT_SUPPORTED"><!-- --></A><H3>
+ERROR_NOT_SUPPORTED</H3>
+<PRE>
+public static final int <B>ERROR_NOT_SUPPORTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NOT_SUPPORTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_EXCEED_2B_NONZEROS"><!-- --></A><H3>
+ERROR_EXCEED_2B_NONZEROS</H3>
+<PRE>
+public static final int <B>ERROR_EXCEED_2B_NONZEROS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_EXCEED_2B_NONZEROS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_INVALID_PIECEWISE_OBJ"><!-- --></A><H3>
+ERROR_INVALID_PIECEWISE_OBJ</H3>
+<PRE>
+public static final int <B>ERROR_INVALID_PIECEWISE_OBJ</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_INVALID_PIECEWISE_OBJ">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_UPDATEMODE_CHANGE"><!-- --></A><H3>
+ERROR_UPDATEMODE_CHANGE</H3>
+<PRE>
+public static final int <B>ERROR_UPDATEMODE_CHANGE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_UPDATEMODE_CHANGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_CLOUD"><!-- --></A><H3>
+ERROR_CLOUD</H3>
+<PRE>
+public static final int <B>ERROR_CLOUD</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_CLOUD">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_MODEL_MODIFICATION"><!-- --></A><H3>
+ERROR_MODEL_MODIFICATION</H3>
+<PRE>
+public static final int <B>ERROR_MODEL_MODIFICATION</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_MODEL_MODIFICATION">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_CSWORKER"><!-- --></A><H3>
+ERROR_CSWORKER</H3>
+<PRE>
+public static final int <B>ERROR_CSWORKER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_CSWORKER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_TUNE_MODEL_TYPES"><!-- --></A><H3>
+ERROR_TUNE_MODEL_TYPES</H3>
+<PRE>
+public static final int <B>ERROR_TUNE_MODEL_TYPES</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_TUNE_MODEL_TYPES">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_SECURITY"><!-- --></A><H3>
+ERROR_SECURITY</H3>
+<PRE>
+public static final int <B>ERROR_SECURITY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_SECURITY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_NOT_IN_MODEL"><!-- --></A><H3>
+ERROR_NOT_IN_MODEL</H3>
+<PRE>
+public static final int <B>ERROR_NOT_IN_MODEL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_NOT_IN_MODEL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_FAILED_TO_CREATE_MODEL"><!-- --></A><H3>
+ERROR_FAILED_TO_CREATE_MODEL</H3>
+<PRE>
+public static final int <B>ERROR_FAILED_TO_CREATE_MODEL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_FAILED_TO_CREATE_MODEL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ERROR_INTERNAL"><!-- --></A><H3>
+ERROR_INTERNAL</H3>
+<PRE>
+public static final int <B>ERROR_INTERNAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.ERROR_INTERNAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CUTS_AUTO"><!-- --></A><H3>
+CUTS_AUTO</H3>
+<PRE>
+public static final int <B>CUTS_AUTO</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CUTS_AUTO">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CUTS_OFF"><!-- --></A><H3>
+CUTS_OFF</H3>
+<PRE>
+public static final int <B>CUTS_OFF</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CUTS_OFF">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CUTS_CONSERVATIVE"><!-- --></A><H3>
+CUTS_CONSERVATIVE</H3>
+<PRE>
+public static final int <B>CUTS_CONSERVATIVE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CUTS_CONSERVATIVE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CUTS_AGGRESSIVE"><!-- --></A><H3>
+CUTS_AGGRESSIVE</H3>
+<PRE>
+public static final int <B>CUTS_AGGRESSIVE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CUTS_AGGRESSIVE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CUTS_VERYAGGRESSIVE"><!-- --></A><H3>
+CUTS_VERYAGGRESSIVE</H3>
+<PRE>
+public static final int <B>CUTS_VERYAGGRESSIVE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.CUTS_VERYAGGRESSIVE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="METHOD_AUTO"><!-- --></A><H3>
+METHOD_AUTO</H3>
+<PRE>
+public static final int <B>METHOD_AUTO</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.METHOD_AUTO">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="METHOD_PRIMAL"><!-- --></A><H3>
+METHOD_PRIMAL</H3>
+<PRE>
+public static final int <B>METHOD_PRIMAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.METHOD_PRIMAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="METHOD_DUAL"><!-- --></A><H3>
+METHOD_DUAL</H3>
+<PRE>
+public static final int <B>METHOD_DUAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.METHOD_DUAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="METHOD_BARRIER"><!-- --></A><H3>
+METHOD_BARRIER</H3>
+<PRE>
+public static final int <B>METHOD_BARRIER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.METHOD_BARRIER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="METHOD_CONCURRENT"><!-- --></A><H3>
+METHOD_CONCURRENT</H3>
+<PRE>
+public static final int <B>METHOD_CONCURRENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.METHOD_CONCURRENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="METHOD_DETERMINISTIC_CONCURRENT"><!-- --></A><H3>
+METHOD_DETERMINISTIC_CONCURRENT</H3>
+<PRE>
+public static final int <B>METHOD_DETERMINISTIC_CONCURRENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.METHOD_DETERMINISTIC_CONCURRENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="BARORDER_AUTOMATIC"><!-- --></A><H3>
+BARORDER_AUTOMATIC</H3>
+<PRE>
+public static final int <B>BARORDER_AUTOMATIC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.BARORDER_AUTOMATIC">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="BARORDER_AMD"><!-- --></A><H3>
+BARORDER_AMD</H3>
+<PRE>
+public static final int <B>BARORDER_AMD</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.BARORDER_AMD">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="BARORDER_NESTEDDISSECTION"><!-- --></A><H3>
+BARORDER_NESTEDDISSECTION</H3>
+<PRE>
+public static final int <B>BARORDER_NESTEDDISSECTION</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.BARORDER_NESTEDDISSECTION">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FEASRELAX_LINEAR"><!-- --></A><H3>
+FEASRELAX_LINEAR</H3>
+<PRE>
+public static final int <B>FEASRELAX_LINEAR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.FEASRELAX_LINEAR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FEASRELAX_QUADRATIC"><!-- --></A><H3>
+FEASRELAX_QUADRATIC</H3>
+<PRE>
+public static final int <B>FEASRELAX_QUADRATIC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.FEASRELAX_QUADRATIC">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FEASRELAX_CARDINALITY"><!-- --></A><H3>
+FEASRELAX_CARDINALITY</H3>
+<PRE>
+public static final int <B>FEASRELAX_CARDINALITY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../constant-values.html#gurobi.GRB.FEASRELAX_CARDINALITY">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="GRB()"><!-- --></A><H3>
+GRB</H3>
+<PRE>
+public <B>GRB</B>()</PRE>
+<DL>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../gurobi/GRB.BatchStatus.html" title="class in gurobi"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GRB.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GRB.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#methods_inherited_from_class_java.lang.Object">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;METHOD</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

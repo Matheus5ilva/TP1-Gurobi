@@ -1,0 +1,3694 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GurobiJni
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="GurobiJni";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../gurobi/GRBVar.html" title="class in gurobi"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GurobiJni.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GurobiJni.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+gurobi</FONT>
+<BR>
+Class GurobiJni</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../resources/inherit.gif" ALT="extended by "><B>gurobi.GurobiJni</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>GurobiJni</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#GurobiJni()">GurobiJni</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addconstrs(long, int, int, int[], int[], double[], char[], double[], double[], java.lang.String[])">addconstrs</A></B>(long&nbsp;model,
+           int&nbsp;numconstrs,
+           int&nbsp;numnz,
+           int[]&nbsp;cbeg,
+           int[]&nbsp;cind,
+           double[]&nbsp;cval,
+           char[]&nbsp;sense,
+           double[]&nbsp;lhs,
+           double[]&nbsp;rhs,
+           java.lang.String[]&nbsp;constrnames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrabs(long, java.lang.String, int, int)">addgenconstrabs</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;resind,
+                int&nbsp;argind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrand(long, java.lang.String, int, int, int[])">addgenconstrand</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;resind,
+                int&nbsp;len,
+                int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrcos(long, java.lang.String, int, int, java.lang.String)">addgenconstrcos</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrexp(long, java.lang.String, int, int, java.lang.String)">addgenconstrexp</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrexpa(long, java.lang.String, int, int, double, java.lang.String)">addgenconstrexpa</A></B>(long&nbsp;model,
+                 java.lang.String&nbsp;name,
+                 int&nbsp;xind,
+                 int&nbsp;yind,
+                 double&nbsp;a,
+                 java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrindicator(long, java.lang.String, int, int, int, int[], double[], char, double)">addgenconstrindicator</A></B>(long&nbsp;model,
+                      java.lang.String&nbsp;name,
+                      int&nbsp;binind,
+                      int&nbsp;binval,
+                      int&nbsp;len,
+                      int[]&nbsp;ind,
+                      double[]&nbsp;vals,
+                      char&nbsp;sense,
+                      double&nbsp;rhs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrlog(long, java.lang.String, int, int, java.lang.String)">addgenconstrlog</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrloga(long, java.lang.String, int, int, double, java.lang.String)">addgenconstrloga</A></B>(long&nbsp;model,
+                 java.lang.String&nbsp;name,
+                 int&nbsp;xind,
+                 int&nbsp;yind,
+                 double&nbsp;a,
+                 java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrmax(long, java.lang.String, int, int, int[], double)">addgenconstrmax</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;resind,
+                int&nbsp;len,
+                int[]&nbsp;ind,
+                double&nbsp;constant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrmin(long, java.lang.String, int, int, int[], double)">addgenconstrmin</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;resind,
+                int&nbsp;len,
+                int[]&nbsp;ind,
+                double&nbsp;constant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstror(long, java.lang.String, int, int, int[])">addgenconstror</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;name,
+               int&nbsp;resind,
+               int&nbsp;len,
+               int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrpoly(long, java.lang.String, int, int, int, double[], java.lang.String)">addgenconstrpoly</A></B>(long&nbsp;model,
+                 java.lang.String&nbsp;name,
+                 int&nbsp;xind,
+                 int&nbsp;yind,
+                 int&nbsp;plen,
+                 double[]&nbsp;pcoe,
+                 java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrpow(long, java.lang.String, int, int, double, java.lang.String)">addgenconstrpow</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                double&nbsp;a,
+                java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrpwl(long, java.lang.String, int, int, int, double[], double[])">addgenconstrpwl</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                int&nbsp;npts,
+                double[]&nbsp;xpts,
+                double[]&nbsp;ypts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrsin(long, java.lang.String, int, int, java.lang.String)">addgenconstrsin</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addgenconstrtan(long, java.lang.String, int, int, java.lang.String)">addgenconstrtan</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int&nbsp;xind,
+                int&nbsp;yind,
+                java.lang.String&nbsp;options)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addqconstr(long, int, int[], double[], int, int[], int[], double[], char, double, java.lang.String)">addqconstr</A></B>(long&nbsp;model,
+           int&nbsp;lnz,
+           int[]&nbsp;lind,
+           double[]&nbsp;lval,
+           int&nbsp;qnz,
+           int[]&nbsp;qrow,
+           int[]&nbsp;qcol,
+           double[]&nbsp;qval,
+           char&nbsp;sense,
+           double&nbsp;rhs,
+           java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addqpterms(long, int, int[], int[], double[])">addqpterms</A></B>(long&nbsp;model,
+           int&nbsp;qnz,
+           int[]&nbsp;qrow,
+           int[]&nbsp;qcol,
+           double[]&nbsp;qval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addsos(long, int, int, int[], int[], int[], double[])">addsos</A></B>(long&nbsp;model,
+       int&nbsp;numsos,
+       int&nbsp;nummembers,
+       int[]&nbsp;type,
+       int[]&nbsp;beg,
+       int[]&nbsp;ind,
+       double[]&nbsp;weight)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#addvars(long, int, int, int[], int[], double[], double[], double[], double[], char[], java.lang.String[])">addvars</A></B>(long&nbsp;model,
+        int&nbsp;numvars,
+        int&nbsp;numnz,
+        int[]&nbsp;vbeg,
+        int[]&nbsp;vind,
+        double[]&nbsp;vval,
+        double[]&nbsp;obj,
+        double[]&nbsp;lb,
+        double[]&nbsp;ub,
+        char[]&nbsp;vtype,
+        java.lang.String[]&nbsp;varnames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#basishead(long, int[])">basishead</A></B>(long&nbsp;model,
+          int[]&nbsp;bhead)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#binvcolj(long, int, int[], int[], double[])">binvcolj</A></B>(long&nbsp;model,
+         int&nbsp;col,
+         int[]&nbsp;xlen,
+         int[]&nbsp;xind,
+         double[]&nbsp;xval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#binvrowi(long, int, int[], int[], double[])">binvrowi</A></B>(long&nbsp;model,
+         int&nbsp;i,
+         int[]&nbsp;xlen,
+         int[]&nbsp;xind,
+         double[]&nbsp;xval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#bsolve(long, int, int[], double[], int[], int[], double[])">bsolve</A></B>(long&nbsp;model,
+       int&nbsp;blen,
+       int[]&nbsp;bind,
+       double[]&nbsp;bval,
+       int[]&nbsp;xlen,
+       int[]&nbsp;xind,
+       double[]&nbsp;xval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#cbcutorlazy(long, int, double, int[], double[], char, int)">cbcutorlazy</A></B>(long&nbsp;cbdata,
+            int&nbsp;len,
+            double&nbsp;rhs,
+            int[]&nbsp;cutind,
+            double[]&nbsp;cutval,
+            char&nbsp;sense,
+            int&nbsp;iscut)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#cbgetdblinfo(long, int, int, double[])">cbgetdblinfo</A></B>(long&nbsp;cbdata,
+             int&nbsp;where,
+             int&nbsp;what,
+             double[]&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#cbgetintinfo(long, int, int, int[])">cbgetintinfo</A></B>(long&nbsp;cbdata,
+             int&nbsp;where,
+             int&nbsp;what,
+             int[]&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#cbgetstrinfo(long, int, int)">cbgetstrinfo</A></B>(long&nbsp;cbdata,
+             int&nbsp;where,
+             int&nbsp;what)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#cbsolution(long, double[], double[])">cbsolution</A></B>(long&nbsp;cbdata,
+           double[]&nbsp;sol,
+           double[]&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#checkmodel(long)">checkmodel</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#chgcoeffs(long, int, int[], int[], double[])">chgcoeffs</A></B>(long&nbsp;model,
+          int&nbsp;cnt,
+          int[]&nbsp;cind,
+          int[]&nbsp;vind,
+          double[]&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#clean2(int[], int[], double[])">clean2</A></B>(int[]&nbsp;len,
+       int[]&nbsp;ind,
+       double[]&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#clean3(int[], int[], int[], double[])">clean3</A></B>(int[]&nbsp;len,
+       int[]&nbsp;ind0,
+       int[]&nbsp;ind1,
+       double[]&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#computeIIS(long)">computeIIS</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#copymodel(long)">copymodel</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#createenv(long[], int, int, int)">createenv</A></B>(long[]&nbsp;env,
+          int&nbsp;major,
+          int&nbsp;minor,
+          int&nbsp;tech)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#delconstrs(long, int, int[])">delconstrs</A></B>(long&nbsp;model,
+           int&nbsp;len,
+           int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#delgenconstrs(long, int, int[])">delgenconstrs</A></B>(long&nbsp;model,
+              int&nbsp;len,
+              int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#delq(long)">delq</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#delqconstrs(long, int, int[])">delqconstrs</A></B>(long&nbsp;model,
+            int&nbsp;len,
+            int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#delsos(long, int, int[])">delsos</A></B>(long&nbsp;model,
+       int&nbsp;len,
+       int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#delvars(long, int, int[])">delvars</A></B>(long&nbsp;model,
+        int&nbsp;len,
+        int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#discardconcurrentenvs(long)">discardconcurrentenvs</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#discardmultiobjenvs(long)">discardmultiobjenvs</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#feasibility(long, long[])">feasibility</A></B>(long&nbsp;model,
+            long[]&nbsp;feasibility)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#feasrelax(long, int, int, double[], double[], double[], double[])">feasrelax</A></B>(long&nbsp;model,
+          int&nbsp;type,
+          int&nbsp;minrelax,
+          double[]&nbsp;lbpen,
+          double[]&nbsp;ubpen,
+          double[]&nbsp;rhspen,
+          double[]&nbsp;feasobjP)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#fixedmodel(long, long[])">fixedmodel</A></B>(long&nbsp;model,
+           long[]&nbsp;fixed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#freebatch(long)">freebatch</A></B>(long&nbsp;batch)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#freeenv(long)">freeenv</A></B>(long&nbsp;env)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#freemodel(long)">freemodel</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#fsolve(long, int, int[], double[], int[], int[], double[])">fsolve</A></B>(long&nbsp;model,
+       int&nbsp;blen,
+       int[]&nbsp;bind,
+       double[]&nbsp;bval,
+       int[]&nbsp;xlen,
+       int[]&nbsp;xind,
+       double[]&nbsp;xval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getattrinfo(long, java.lang.String, int[])">getattrinfo</A></B>(long&nbsp;model,
+            java.lang.String&nbsp;attrname,
+            int[]&nbsp;attrinfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getcharattrlist(long, java.lang.String, int, int, int[], char[])">getcharattrlist</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;attrname,
+                int&nbsp;first,
+                int&nbsp;len,
+                int[]&nbsp;ind,
+                char[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getcoeff(long, int, int, double[])">getcoeff</A></B>(long&nbsp;model,
+         int&nbsp;constr,
+         int&nbsp;var,
+         double[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getconcurrentenv(long, int)">getconcurrentenv</A></B>(long&nbsp;model,
+                 int&nbsp;num)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getconstrbyname(long, java.lang.String, int[])">getconstrbyname</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;name,
+                int[]&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getconstrs(long, int[], int[], int[], double[], int, int)">getconstrs</A></B>(long&nbsp;model,
+           int[]&nbsp;numnz,
+           int[]&nbsp;cbeg,
+           int[]&nbsp;cind,
+           double[]&nbsp;cval,
+           int&nbsp;start,
+           int&nbsp;len)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getdblattrlist(long, java.lang.String, int, int, int[], double[])">getdblattrlist</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;attrname,
+               int&nbsp;first,
+               int&nbsp;len,
+               int[]&nbsp;ind,
+               double[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getdblparam(long, java.lang.String, double[])">getdblparam</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;param,
+            double[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getdblparaminfo(long, java.lang.String, double[])">getdblparaminfo</A></B>(long&nbsp;env,
+                java.lang.String&nbsp;param,
+                double[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getenv(long)">getenv</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#geterrormsg(long)">geterrormsg</A></B>(long&nbsp;env)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrabs(long, int, int[], int[])">getgenconstrabs</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;resind,
+                int[]&nbsp;argind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrand(long, int, int[], int[], int[])">getgenconstrand</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;resind,
+                int[]&nbsp;nvars,
+                int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrcos(long, int, int[], int[])">getgenconstrcos</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrexp(long, int, int[], int[])">getgenconstrexp</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrexpa(long, int, int[], int[], double[])">getgenconstrexpa</A></B>(long&nbsp;model,
+                 int&nbsp;genconstr,
+                 int[]&nbsp;xind,
+                 int[]&nbsp;yind,
+                 double[]&nbsp;a)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrindicator(long, int, int[], int[], int[], int[], double[], char[], double[])">getgenconstrindicator</A></B>(long&nbsp;model,
+                      int&nbsp;genconstr,
+                      int[]&nbsp;binind,
+                      int[]&nbsp;binval,
+                      int[]&nbsp;nvars,
+                      int[]&nbsp;ind,
+                      double[]&nbsp;vals,
+                      char[]&nbsp;sense,
+                      double[]&nbsp;rhs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrlog(long, int, int[], int[])">getgenconstrlog</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrloga(long, int, int[], int[], double[])">getgenconstrloga</A></B>(long&nbsp;model,
+                 int&nbsp;genconstr,
+                 int[]&nbsp;xind,
+                 int[]&nbsp;yind,
+                 double[]&nbsp;a)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrmax(long, int, int[], int[], int[], double[])">getgenconstrmax</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;resind,
+                int[]&nbsp;nvars,
+                int[]&nbsp;ind,
+                double[]&nbsp;constant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrmin(long, int, int[], int[], int[], double[])">getgenconstrmin</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;resind,
+                int[]&nbsp;nvars,
+                int[]&nbsp;ind,
+                double[]&nbsp;constant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstror(long, int, int[], int[], int[])">getgenconstror</A></B>(long&nbsp;model,
+               int&nbsp;genconstr,
+               int[]&nbsp;resind,
+               int[]&nbsp;nvars,
+               int[]&nbsp;ind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrpoly(long, int, int[], int[], int[], double[])">getgenconstrpoly</A></B>(long&nbsp;model,
+                 int&nbsp;genconstr,
+                 int[]&nbsp;xind,
+                 int[]&nbsp;yind,
+                 int[]&nbsp;plen,
+                 double[]&nbsp;pcoe)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrpow(long, int, int[], int[], double[])">getgenconstrpow</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind,
+                double[]&nbsp;a)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrpwl(long, int, int[], int[], int[], double[], double[])">getgenconstrpwl</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind,
+                int[]&nbsp;npts,
+                double[]&nbsp;xpts,
+                double[]&nbsp;ypts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrsin(long, int, int[], int[])">getgenconstrsin</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getgenconstrtan(long, int, int[], int[])">getgenconstrtan</A></B>(long&nbsp;model,
+                int&nbsp;genconstr,
+                int[]&nbsp;xind,
+                int[]&nbsp;yind)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getintattrlist(long, java.lang.String, int, int, int[], int[])">getintattrlist</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;attrname,
+               int&nbsp;first,
+               int&nbsp;len,
+               int[]&nbsp;ind,
+               int[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getintparam(long, java.lang.String, int[])">getintparam</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;param,
+            int[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getintparaminfo(long, java.lang.String, int[])">getintparaminfo</A></B>(long&nbsp;env,
+                java.lang.String&nbsp;param,
+                int[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getJSONSolution(long, java.lang.String[])">getJSONSolution</A></B>(long&nbsp;model,
+                java.lang.String[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getmultiobjenv(long, int)">getmultiobjenv</A></B>(long&nbsp;model,
+               int&nbsp;num)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getpwlobj(long, int, int[], double[], double[])">getpwlobj</A></B>(long&nbsp;model,
+          int&nbsp;var,
+          int[]&nbsp;points,
+          double[]&nbsp;ptval,
+          double[]&nbsp;ptobj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getq(long, int[], int[], int[], double[])">getq</A></B>(long&nbsp;model,
+     int[]&nbsp;qnz,
+     int[]&nbsp;qrow,
+     int[]&nbsp;qcol,
+     double[]&nbsp;qval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getqconstr(long, int, int[], int[], double[], int[], int[], int[], double[])">getqconstr</A></B>(long&nbsp;model,
+           int&nbsp;qconstr,
+           int[]&nbsp;lnz,
+           int[]&nbsp;lind,
+           double[]&nbsp;lval,
+           int[]&nbsp;qnz,
+           int[]&nbsp;qrow,
+           int[]&nbsp;qcol,
+           double[]&nbsp;qval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getsos(long, int[], int[], int[], int[], double[], int, int)">getsos</A></B>(long&nbsp;model,
+       int[]&nbsp;nummembers,
+       int[]&nbsp;sostype,
+       int[]&nbsp;beg,
+       int[]&nbsp;ind,
+       double[]&nbsp;weight,
+       int&nbsp;start,
+       int&nbsp;len)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getstrattrlist(long, java.lang.String, int, int, int[], java.lang.String[])">getstrattrlist</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;attrname,
+               int&nbsp;first,
+               int&nbsp;len,
+               int[]&nbsp;ind,
+               java.lang.String[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getstrparam(long, java.lang.String, java.lang.String[])">getstrparam</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;param,
+            java.lang.String[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getstrparaminfo(long, java.lang.String, java.lang.String[])">getstrparaminfo</A></B>(long&nbsp;env,
+                java.lang.String&nbsp;param,
+                java.lang.String[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#gettuneresult(long, int)">gettuneresult</A></B>(long&nbsp;model,
+              int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getvarbyname(long, java.lang.String, int[])">getvarbyname</A></B>(long&nbsp;model,
+             java.lang.String&nbsp;name,
+             int[]&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#getvars(long, int[], int[], int[], double[], int, int)">getvars</A></B>(long&nbsp;model,
+        int[]&nbsp;numnz,
+        int[]&nbsp;vbeg,
+        int[]&nbsp;vind,
+        double[]&nbsp;vval,
+        int&nbsp;start,
+        int&nbsp;len)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#isattrfile(java.lang.String)">isattrfile</A></B>(java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#ismodelfile(java.lang.String)">ismodelfile</A></B>(java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#isqp(long[], java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)">isqp</A></B>(long[]&nbsp;env,
+     java.lang.String&nbsp;logfilename,
+     java.lang.String&nbsp;isvname,
+     java.lang.String&nbsp;appname,
+     int&nbsp;expiration,
+     java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#linearize(long, long[])">linearize</A></B>(long&nbsp;model,
+          long[]&nbsp;linearized)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#loadclientenv(long[], java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, double, int, int, int)">loadclientenv</A></B>(long[]&nbsp;env,
+              java.lang.String&nbsp;logfilename,
+              java.lang.String&nbsp;computeserver,
+              java.lang.String&nbsp;router,
+              java.lang.String&nbsp;password,
+              java.lang.String&nbsp;group,
+              int&nbsp;CStlsInsecure,
+              int&nbsp;priority,
+              double&nbsp;timeout,
+              int&nbsp;major,
+              int&nbsp;minor,
+              int&nbsp;tech)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#loadcloudenv(long[], java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int)">loadcloudenv</A></B>(long[]&nbsp;env,
+             java.lang.String&nbsp;logfilename,
+             java.lang.String&nbsp;accessID,
+             java.lang.String&nbsp;secretKey,
+             java.lang.String&nbsp;pool,
+             int&nbsp;priority,
+             int&nbsp;major,
+             int&nbsp;minor,
+             int&nbsp;tech)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#loadenv(long[], java.lang.String, int, int, int, int)">loadenv</A></B>(long[]&nbsp;env,
+        java.lang.String&nbsp;logfilename,
+        int&nbsp;major,
+        int&nbsp;minor,
+        int&nbsp;tech,
+        int&nbsp;idletimeout)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#loadmodel(long, java.lang.String, int, int, int, double, double[], char[], double[], int[], int[], int[][], double[], double[], double[], char[], java.lang.String[], java.lang.String[])">loadmodel</A></B>(long&nbsp;env,
+          java.lang.String&nbsp;Pname,
+          int&nbsp;numvars,
+          int&nbsp;numconstrs,
+          int&nbsp;objsense,
+          double&nbsp;objcon,
+          double[]&nbsp;obj,
+          char[]&nbsp;sense,
+          double[]&nbsp;rhs,
+          int[]&nbsp;vbeg,
+          int[]&nbsp;vlen,
+          int[][]&nbsp;vind,
+          double[]&nbsp;vval,
+          double[]&nbsp;lb,
+          double[]&nbsp;ub,
+          char[]&nbsp;vtype,
+          java.lang.String[]&nbsp;varnames,
+          java.lang.String[]&nbsp;constrnames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#message(long, java.lang.String)">message</A></B>(long&nbsp;env,
+        java.lang.String&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#newbatch(long[], long, java.lang.String)">newbatch</A></B>(long[]&nbsp;batch,
+         long&nbsp;env,
+         java.lang.String&nbsp;ID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#newmodel(int[], long, java.lang.String, int, double[], double[], double[], char[], java.lang.String[])">newmodel</A></B>(int[]&nbsp;jerror,
+         long&nbsp;env,
+         java.lang.String&nbsp;Pname,
+         int&nbsp;numvars,
+         double[]&nbsp;obj,
+         double[]&nbsp;lb,
+         double[]&nbsp;ub,
+         char[]&nbsp;vtype,
+         java.lang.String[]&nbsp;varnames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#prefetchattr(long, java.lang.String)">prefetchattr</A></B>(long&nbsp;model,
+             java.lang.String&nbsp;attrname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#presolvemodel(long, long[])">presolvemodel</A></B>(long&nbsp;model,
+              long[]&nbsp;presolved)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#read(long, java.lang.String)">read</A></B>(long&nbsp;model,
+     java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#readmodel(long, java.lang.String)">readmodel</A></B>(long&nbsp;env,
+          java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#readparams(long, java.lang.String)">readparams</A></B>(long&nbsp;env,
+           java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#relaxmodel(long, long[])">relaxmodel</A></B>(long&nbsp;model,
+           long[]&nbsp;relaxed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#releaselicense(long)">releaselicense</A></B>(long&nbsp;env)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#reset(long, int)">reset</A></B>(long&nbsp;model,
+      int&nbsp;clearall)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#resetparams(long)">resetparams</A></B>(long&nbsp;env)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setcharattrlist(long, java.lang.String, int, int, int[], char[])">setcharattrlist</A></B>(long&nbsp;model,
+                java.lang.String&nbsp;attrname,
+                int&nbsp;first,
+                int&nbsp;len,
+                int[]&nbsp;ind,
+                char[]&nbsp;newvalues)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setdblattrlist(long, java.lang.String, int, int, int[], double[])">setdblattrlist</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;attrname,
+               int&nbsp;first,
+               int&nbsp;len,
+               int[]&nbsp;ind,
+               double[]&nbsp;newvalues)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setdblparam(long, java.lang.String, double)">setdblparam</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;param,
+            double&nbsp;newvalue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setintattrlist(long, java.lang.String, int, int, int[], int[])">setintattrlist</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;attrname,
+               int&nbsp;first,
+               int&nbsp;len,
+               int[]&nbsp;ind,
+               int[]&nbsp;newvalues)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setintparam(long, java.lang.String, int)">setintparam</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;param,
+            int&nbsp;newvalue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setobjective(long, int, double, int, int[], double[], int, int[], int[], double[])">setobjective</A></B>(long&nbsp;model,
+             int&nbsp;sense,
+             double&nbsp;objcon,
+             int&nbsp;lnz,
+             int[]&nbsp;lind,
+             double[]&nbsp;lval,
+             int&nbsp;qnz,
+             int[]&nbsp;qrow,
+             int[]&nbsp;qcol,
+             double[]&nbsp;qval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setobjectiven(long, int, int, double, double, double, java.lang.String, double, int, int[], double[])">setobjectiven</A></B>(long&nbsp;model,
+              int&nbsp;index,
+              int&nbsp;priority,
+              double&nbsp;weight,
+              double&nbsp;abstol,
+              double&nbsp;reltol,
+              java.lang.String&nbsp;name,
+              double&nbsp;objcon,
+              int&nbsp;lnz,
+              int[]&nbsp;lind,
+              double[]&nbsp;lval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setparam(long, java.lang.String, java.lang.String)">setparam</A></B>(long&nbsp;env,
+         java.lang.String&nbsp;param,
+         java.lang.String&nbsp;newvalue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setpwlobj(long, int, int, double[], double[])">setpwlobj</A></B>(long&nbsp;model,
+          int&nbsp;var,
+          int&nbsp;points,
+          double[]&nbsp;ptval,
+          double[]&nbsp;ptobj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setstrattrlist(long, java.lang.String, int, int, int[], java.lang.String[])">setstrattrlist</A></B>(long&nbsp;model,
+               java.lang.String&nbsp;attrname,
+               int&nbsp;first,
+               int&nbsp;len,
+               int[]&nbsp;ind,
+               java.lang.String[]&nbsp;newvalues)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#setstrparam(long, java.lang.String, java.lang.String)">setstrparam</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;param,
+            java.lang.String&nbsp;newvalue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#singlescenariomodel(long, long[])">singlescenariomodel</A></B>(long&nbsp;model,
+                    long[]&nbsp;singlescenario)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#startenv(long)">startenv</A></B>(long&nbsp;env)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#stoponemultiobj(long, long, int)">stoponemultiobj</A></B>(long&nbsp;model,
+                long&nbsp;cbdata,
+                int&nbsp;objnum)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#sync(long, long)">sync</A></B>(long&nbsp;model,
+     long&nbsp;jcbdata)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#terminate(long)">terminate</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#tunemodel(long)">tunemodel</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#updatemodel(long)">updatemodel</A></B>(long&nbsp;model)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#version(int[])">version</A></B>(int[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#write(long, java.lang.String)">write</A></B>(long&nbsp;model,
+      java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GurobiJni.html#writeparams(long, java.lang.String)">writeparams</A></B>(long&nbsp;env,
+            java.lang.String&nbsp;filename)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="GurobiJni()"><!-- --></A><H3>
+GurobiJni</H3>
+<PRE>
+public <B>GurobiJni</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getattrinfo(long, java.lang.String, int[])"><!-- --></A><H3>
+getattrinfo</H3>
+<PRE>
+public static int <B>getattrinfo</B>(long&nbsp;model,
+                              java.lang.String&nbsp;attrname,
+                              int[]&nbsp;attrinfo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getintattrlist(long, java.lang.String, int, int, int[], int[])"><!-- --></A><H3>
+getintattrlist</H3>
+<PRE>
+public static int <B>getintattrlist</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;attrname,
+                                 int&nbsp;first,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind,
+                                 int[]&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setintattrlist(long, java.lang.String, int, int, int[], int[])"><!-- --></A><H3>
+setintattrlist</H3>
+<PRE>
+public static int <B>setintattrlist</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;attrname,
+                                 int&nbsp;first,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind,
+                                 int[]&nbsp;newvalues)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getcharattrlist(long, java.lang.String, int, int, int[], char[])"><!-- --></A><H3>
+getcharattrlist</H3>
+<PRE>
+public static int <B>getcharattrlist</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;attrname,
+                                  int&nbsp;first,
+                                  int&nbsp;len,
+                                  int[]&nbsp;ind,
+                                  char[]&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setcharattrlist(long, java.lang.String, int, int, int[], char[])"><!-- --></A><H3>
+setcharattrlist</H3>
+<PRE>
+public static int <B>setcharattrlist</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;attrname,
+                                  int&nbsp;first,
+                                  int&nbsp;len,
+                                  int[]&nbsp;ind,
+                                  char[]&nbsp;newvalues)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getdblattrlist(long, java.lang.String, int, int, int[], double[])"><!-- --></A><H3>
+getdblattrlist</H3>
+<PRE>
+public static int <B>getdblattrlist</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;attrname,
+                                 int&nbsp;first,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind,
+                                 double[]&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setdblattrlist(long, java.lang.String, int, int, int[], double[])"><!-- --></A><H3>
+setdblattrlist</H3>
+<PRE>
+public static int <B>setdblattrlist</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;attrname,
+                                 int&nbsp;first,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind,
+                                 double[]&nbsp;newvalues)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getstrattrlist(long, java.lang.String, int, int, int[], java.lang.String[])"><!-- --></A><H3>
+getstrattrlist</H3>
+<PRE>
+public static int <B>getstrattrlist</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;attrname,
+                                 int&nbsp;first,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind,
+                                 java.lang.String[]&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setstrattrlist(long, java.lang.String, int, int, int[], java.lang.String[])"><!-- --></A><H3>
+setstrattrlist</H3>
+<PRE>
+public static int <B>setstrattrlist</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;attrname,
+                                 int&nbsp;first,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind,
+                                 java.lang.String[]&nbsp;newvalues)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="prefetchattr(long, java.lang.String)"><!-- --></A><H3>
+prefetchattr</H3>
+<PRE>
+public static int <B>prefetchattr</B>(long&nbsp;model,
+                               java.lang.String&nbsp;attrname)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getJSONSolution(long, java.lang.String[])"><!-- --></A><H3>
+getJSONSolution</H3>
+<PRE>
+public static int <B>getJSONSolution</B>(long&nbsp;model,
+                                  java.lang.String[]&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getcoeff(long, int, int, double[])"><!-- --></A><H3>
+getcoeff</H3>
+<PRE>
+public static int <B>getcoeff</B>(long&nbsp;model,
+                           int&nbsp;constr,
+                           int&nbsp;var,
+                           double[]&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getconstrs(long, int[], int[], int[], double[], int, int)"><!-- --></A><H3>
+getconstrs</H3>
+<PRE>
+public static int <B>getconstrs</B>(long&nbsp;model,
+                             int[]&nbsp;numnz,
+                             int[]&nbsp;cbeg,
+                             int[]&nbsp;cind,
+                             double[]&nbsp;cval,
+                             int&nbsp;start,
+                             int&nbsp;len)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getconstrbyname(long, java.lang.String, int[])"><!-- --></A><H3>
+getconstrbyname</H3>
+<PRE>
+public static int <B>getconstrbyname</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int[]&nbsp;index)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getvars(long, int[], int[], int[], double[], int, int)"><!-- --></A><H3>
+getvars</H3>
+<PRE>
+public static int <B>getvars</B>(long&nbsp;model,
+                          int[]&nbsp;numnz,
+                          int[]&nbsp;vbeg,
+                          int[]&nbsp;vind,
+                          double[]&nbsp;vval,
+                          int&nbsp;start,
+                          int&nbsp;len)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getvarbyname(long, java.lang.String, int[])"><!-- --></A><H3>
+getvarbyname</H3>
+<PRE>
+public static int <B>getvarbyname</B>(long&nbsp;model,
+                               java.lang.String&nbsp;name,
+                               int[]&nbsp;index)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getsos(long, int[], int[], int[], int[], double[], int, int)"><!-- --></A><H3>
+getsos</H3>
+<PRE>
+public static int <B>getsos</B>(long&nbsp;model,
+                         int[]&nbsp;nummembers,
+                         int[]&nbsp;sostype,
+                         int[]&nbsp;beg,
+                         int[]&nbsp;ind,
+                         double[]&nbsp;weight,
+                         int&nbsp;start,
+                         int&nbsp;len)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getqconstr(long, int, int[], int[], double[], int[], int[], int[], double[])"><!-- --></A><H3>
+getqconstr</H3>
+<PRE>
+public static int <B>getqconstr</B>(long&nbsp;model,
+                             int&nbsp;qconstr,
+                             int[]&nbsp;lnz,
+                             int[]&nbsp;lind,
+                             double[]&nbsp;lval,
+                             int[]&nbsp;qnz,
+                             int[]&nbsp;qrow,
+                             int[]&nbsp;qcol,
+                             double[]&nbsp;qval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrmax(long, int, int[], int[], int[], double[])"><!-- --></A><H3>
+getgenconstrmax</H3>
+<PRE>
+public static int <B>getgenconstrmax</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;resind,
+                                  int[]&nbsp;nvars,
+                                  int[]&nbsp;ind,
+                                  double[]&nbsp;constant)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrmin(long, int, int[], int[], int[], double[])"><!-- --></A><H3>
+getgenconstrmin</H3>
+<PRE>
+public static int <B>getgenconstrmin</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;resind,
+                                  int[]&nbsp;nvars,
+                                  int[]&nbsp;ind,
+                                  double[]&nbsp;constant)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrabs(long, int, int[], int[])"><!-- --></A><H3>
+getgenconstrabs</H3>
+<PRE>
+public static int <B>getgenconstrabs</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;resind,
+                                  int[]&nbsp;argind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrand(long, int, int[], int[], int[])"><!-- --></A><H3>
+getgenconstrand</H3>
+<PRE>
+public static int <B>getgenconstrand</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;resind,
+                                  int[]&nbsp;nvars,
+                                  int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstror(long, int, int[], int[], int[])"><!-- --></A><H3>
+getgenconstror</H3>
+<PRE>
+public static int <B>getgenconstror</B>(long&nbsp;model,
+                                 int&nbsp;genconstr,
+                                 int[]&nbsp;resind,
+                                 int[]&nbsp;nvars,
+                                 int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrindicator(long, int, int[], int[], int[], int[], double[], char[], double[])"><!-- --></A><H3>
+getgenconstrindicator</H3>
+<PRE>
+public static int <B>getgenconstrindicator</B>(long&nbsp;model,
+                                        int&nbsp;genconstr,
+                                        int[]&nbsp;binind,
+                                        int[]&nbsp;binval,
+                                        int[]&nbsp;nvars,
+                                        int[]&nbsp;ind,
+                                        double[]&nbsp;vals,
+                                        char[]&nbsp;sense,
+                                        double[]&nbsp;rhs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrpwl(long, int, int[], int[], int[], double[], double[])"><!-- --></A><H3>
+getgenconstrpwl</H3>
+<PRE>
+public static int <B>getgenconstrpwl</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind,
+                                  int[]&nbsp;npts,
+                                  double[]&nbsp;xpts,
+                                  double[]&nbsp;ypts)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrpoly(long, int, int[], int[], int[], double[])"><!-- --></A><H3>
+getgenconstrpoly</H3>
+<PRE>
+public static int <B>getgenconstrpoly</B>(long&nbsp;model,
+                                   int&nbsp;genconstr,
+                                   int[]&nbsp;xind,
+                                   int[]&nbsp;yind,
+                                   int[]&nbsp;plen,
+                                   double[]&nbsp;pcoe)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrexp(long, int, int[], int[])"><!-- --></A><H3>
+getgenconstrexp</H3>
+<PRE>
+public static int <B>getgenconstrexp</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrexpa(long, int, int[], int[], double[])"><!-- --></A><H3>
+getgenconstrexpa</H3>
+<PRE>
+public static int <B>getgenconstrexpa</B>(long&nbsp;model,
+                                   int&nbsp;genconstr,
+                                   int[]&nbsp;xind,
+                                   int[]&nbsp;yind,
+                                   double[]&nbsp;a)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrlog(long, int, int[], int[])"><!-- --></A><H3>
+getgenconstrlog</H3>
+<PRE>
+public static int <B>getgenconstrlog</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrloga(long, int, int[], int[], double[])"><!-- --></A><H3>
+getgenconstrloga</H3>
+<PRE>
+public static int <B>getgenconstrloga</B>(long&nbsp;model,
+                                   int&nbsp;genconstr,
+                                   int[]&nbsp;xind,
+                                   int[]&nbsp;yind,
+                                   double[]&nbsp;a)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrpow(long, int, int[], int[], double[])"><!-- --></A><H3>
+getgenconstrpow</H3>
+<PRE>
+public static int <B>getgenconstrpow</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind,
+                                  double[]&nbsp;a)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrsin(long, int, int[], int[])"><!-- --></A><H3>
+getgenconstrsin</H3>
+<PRE>
+public static int <B>getgenconstrsin</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrcos(long, int, int[], int[])"><!-- --></A><H3>
+getgenconstrcos</H3>
+<PRE>
+public static int <B>getgenconstrcos</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getgenconstrtan(long, int, int[], int[])"><!-- --></A><H3>
+getgenconstrtan</H3>
+<PRE>
+public static int <B>getgenconstrtan</B>(long&nbsp;model,
+                                  int&nbsp;genconstr,
+                                  int[]&nbsp;xind,
+                                  int[]&nbsp;yind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getpwlobj(long, int, int[], double[], double[])"><!-- --></A><H3>
+getpwlobj</H3>
+<PRE>
+public static int <B>getpwlobj</B>(long&nbsp;model,
+                            int&nbsp;var,
+                            int[]&nbsp;points,
+                            double[]&nbsp;ptval,
+                            double[]&nbsp;ptobj)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copymodel(long)"><!-- --></A><H3>
+copymodel</H3>
+<PRE>
+public static long <B>copymodel</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fixedmodel(long, long[])"><!-- --></A><H3>
+fixedmodel</H3>
+<PRE>
+public static int <B>fixedmodel</B>(long&nbsp;model,
+                             long[]&nbsp;fixed)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="relaxmodel(long, long[])"><!-- --></A><H3>
+relaxmodel</H3>
+<PRE>
+public static int <B>relaxmodel</B>(long&nbsp;model,
+                             long[]&nbsp;relaxed)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="presolvemodel(long, long[])"><!-- --></A><H3>
+presolvemodel</H3>
+<PRE>
+public static int <B>presolvemodel</B>(long&nbsp;model,
+                                long[]&nbsp;presolved)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="feasibility(long, long[])"><!-- --></A><H3>
+feasibility</H3>
+<PRE>
+public static int <B>feasibility</B>(long&nbsp;model,
+                              long[]&nbsp;feasibility)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="linearize(long, long[])"><!-- --></A><H3>
+linearize</H3>
+<PRE>
+public static int <B>linearize</B>(long&nbsp;model,
+                            long[]&nbsp;linearized)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="singlescenariomodel(long, long[])"><!-- --></A><H3>
+singlescenariomodel</H3>
+<PRE>
+public static int <B>singlescenariomodel</B>(long&nbsp;model,
+                                      long[]&nbsp;singlescenario)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="feasrelax(long, int, int, double[], double[], double[], double[])"><!-- --></A><H3>
+feasrelax</H3>
+<PRE>
+public static int <B>feasrelax</B>(long&nbsp;model,
+                            int&nbsp;type,
+                            int&nbsp;minrelax,
+                            double[]&nbsp;lbpen,
+                            double[]&nbsp;ubpen,
+                            double[]&nbsp;rhspen,
+                            double[]&nbsp;feasobjP)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readmodel(long, java.lang.String)"><!-- --></A><H3>
+readmodel</H3>
+<PRE>
+public static long <B>readmodel</B>(long&nbsp;env,
+                             java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="read(long, java.lang.String)"><!-- --></A><H3>
+read</H3>
+<PRE>
+public static int <B>read</B>(long&nbsp;model,
+                       java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="write(long, java.lang.String)"><!-- --></A><H3>
+write</H3>
+<PRE>
+public static int <B>write</B>(long&nbsp;model,
+                        java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ismodelfile(java.lang.String)"><!-- --></A><H3>
+ismodelfile</H3>
+<PRE>
+public static int <B>ismodelfile</B>(java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isattrfile(java.lang.String)"><!-- --></A><H3>
+isattrfile</H3>
+<PRE>
+public static int <B>isattrfile</B>(java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sync(long, long)"><!-- --></A><H3>
+sync</H3>
+<PRE>
+public static int <B>sync</B>(long&nbsp;model,
+                       long&nbsp;jcbdata)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newmodel(int[], long, java.lang.String, int, double[], double[], double[], char[], java.lang.String[])"><!-- --></A><H3>
+newmodel</H3>
+<PRE>
+public static long <B>newmodel</B>(int[]&nbsp;jerror,
+                            long&nbsp;env,
+                            java.lang.String&nbsp;Pname,
+                            int&nbsp;numvars,
+                            double[]&nbsp;obj,
+                            double[]&nbsp;lb,
+                            double[]&nbsp;ub,
+                            char[]&nbsp;vtype,
+                            java.lang.String[]&nbsp;varnames)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadmodel(long, java.lang.String, int, int, int, double, double[], char[], double[], int[], int[], int[][], double[], double[], double[], char[], java.lang.String[], java.lang.String[])"><!-- --></A><H3>
+loadmodel</H3>
+<PRE>
+public static long <B>loadmodel</B>(long&nbsp;env,
+                             java.lang.String&nbsp;Pname,
+                             int&nbsp;numvars,
+                             int&nbsp;numconstrs,
+                             int&nbsp;objsense,
+                             double&nbsp;objcon,
+                             double[]&nbsp;obj,
+                             char[]&nbsp;sense,
+                             double[]&nbsp;rhs,
+                             int[]&nbsp;vbeg,
+                             int[]&nbsp;vlen,
+                             int[][]&nbsp;vind,
+                             double[]&nbsp;vval,
+                             double[]&nbsp;lb,
+                             double[]&nbsp;ub,
+                             char[]&nbsp;vtype,
+                             java.lang.String[]&nbsp;varnames,
+                             java.lang.String[]&nbsp;constrnames)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addvars(long, int, int, int[], int[], double[], double[], double[], double[], char[], java.lang.String[])"><!-- --></A><H3>
+addvars</H3>
+<PRE>
+public static int <B>addvars</B>(long&nbsp;model,
+                          int&nbsp;numvars,
+                          int&nbsp;numnz,
+                          int[]&nbsp;vbeg,
+                          int[]&nbsp;vind,
+                          double[]&nbsp;vval,
+                          double[]&nbsp;obj,
+                          double[]&nbsp;lb,
+                          double[]&nbsp;ub,
+                          char[]&nbsp;vtype,
+                          java.lang.String[]&nbsp;varnames)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addconstrs(long, int, int, int[], int[], double[], char[], double[], double[], java.lang.String[])"><!-- --></A><H3>
+addconstrs</H3>
+<PRE>
+public static int <B>addconstrs</B>(long&nbsp;model,
+                             int&nbsp;numconstrs,
+                             int&nbsp;numnz,
+                             int[]&nbsp;cbeg,
+                             int[]&nbsp;cind,
+                             double[]&nbsp;cval,
+                             char[]&nbsp;sense,
+                             double[]&nbsp;lhs,
+                             double[]&nbsp;rhs,
+                             java.lang.String[]&nbsp;constrnames)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addsos(long, int, int, int[], int[], int[], double[])"><!-- --></A><H3>
+addsos</H3>
+<PRE>
+public static int <B>addsos</B>(long&nbsp;model,
+                         int&nbsp;numsos,
+                         int&nbsp;nummembers,
+                         int[]&nbsp;type,
+                         int[]&nbsp;beg,
+                         int[]&nbsp;ind,
+                         double[]&nbsp;weight)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addqconstr(long, int, int[], double[], int, int[], int[], double[], char, double, java.lang.String)"><!-- --></A><H3>
+addqconstr</H3>
+<PRE>
+public static int <B>addqconstr</B>(long&nbsp;model,
+                             int&nbsp;lnz,
+                             int[]&nbsp;lind,
+                             double[]&nbsp;lval,
+                             int&nbsp;qnz,
+                             int[]&nbsp;qrow,
+                             int[]&nbsp;qcol,
+                             double[]&nbsp;qval,
+                             char&nbsp;sense,
+                             double&nbsp;rhs,
+                             java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrmax(long, java.lang.String, int, int, int[], double)"><!-- --></A><H3>
+addgenconstrmax</H3>
+<PRE>
+public static int <B>addgenconstrmax</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;resind,
+                                  int&nbsp;len,
+                                  int[]&nbsp;ind,
+                                  double&nbsp;constant)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrmin(long, java.lang.String, int, int, int[], double)"><!-- --></A><H3>
+addgenconstrmin</H3>
+<PRE>
+public static int <B>addgenconstrmin</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;resind,
+                                  int&nbsp;len,
+                                  int[]&nbsp;ind,
+                                  double&nbsp;constant)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrabs(long, java.lang.String, int, int)"><!-- --></A><H3>
+addgenconstrabs</H3>
+<PRE>
+public static int <B>addgenconstrabs</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;resind,
+                                  int&nbsp;argind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrand(long, java.lang.String, int, int, int[])"><!-- --></A><H3>
+addgenconstrand</H3>
+<PRE>
+public static int <B>addgenconstrand</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;resind,
+                                  int&nbsp;len,
+                                  int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstror(long, java.lang.String, int, int, int[])"><!-- --></A><H3>
+addgenconstror</H3>
+<PRE>
+public static int <B>addgenconstror</B>(long&nbsp;model,
+                                 java.lang.String&nbsp;name,
+                                 int&nbsp;resind,
+                                 int&nbsp;len,
+                                 int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrindicator(long, java.lang.String, int, int, int, int[], double[], char, double)"><!-- --></A><H3>
+addgenconstrindicator</H3>
+<PRE>
+public static int <B>addgenconstrindicator</B>(long&nbsp;model,
+                                        java.lang.String&nbsp;name,
+                                        int&nbsp;binind,
+                                        int&nbsp;binval,
+                                        int&nbsp;len,
+                                        int[]&nbsp;ind,
+                                        double[]&nbsp;vals,
+                                        char&nbsp;sense,
+                                        double&nbsp;rhs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrpwl(long, java.lang.String, int, int, int, double[], double[])"><!-- --></A><H3>
+addgenconstrpwl</H3>
+<PRE>
+public static int <B>addgenconstrpwl</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  int&nbsp;npts,
+                                  double[]&nbsp;xpts,
+                                  double[]&nbsp;ypts)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrpoly(long, java.lang.String, int, int, int, double[], java.lang.String)"><!-- --></A><H3>
+addgenconstrpoly</H3>
+<PRE>
+public static int <B>addgenconstrpoly</B>(long&nbsp;model,
+                                   java.lang.String&nbsp;name,
+                                   int&nbsp;xind,
+                                   int&nbsp;yind,
+                                   int&nbsp;plen,
+                                   double[]&nbsp;pcoe,
+                                   java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrexp(long, java.lang.String, int, int, java.lang.String)"><!-- --></A><H3>
+addgenconstrexp</H3>
+<PRE>
+public static int <B>addgenconstrexp</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrexpa(long, java.lang.String, int, int, double, java.lang.String)"><!-- --></A><H3>
+addgenconstrexpa</H3>
+<PRE>
+public static int <B>addgenconstrexpa</B>(long&nbsp;model,
+                                   java.lang.String&nbsp;name,
+                                   int&nbsp;xind,
+                                   int&nbsp;yind,
+                                   double&nbsp;a,
+                                   java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrlog(long, java.lang.String, int, int, java.lang.String)"><!-- --></A><H3>
+addgenconstrlog</H3>
+<PRE>
+public static int <B>addgenconstrlog</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrloga(long, java.lang.String, int, int, double, java.lang.String)"><!-- --></A><H3>
+addgenconstrloga</H3>
+<PRE>
+public static int <B>addgenconstrloga</B>(long&nbsp;model,
+                                   java.lang.String&nbsp;name,
+                                   int&nbsp;xind,
+                                   int&nbsp;yind,
+                                   double&nbsp;a,
+                                   java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrpow(long, java.lang.String, int, int, double, java.lang.String)"><!-- --></A><H3>
+addgenconstrpow</H3>
+<PRE>
+public static int <B>addgenconstrpow</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  double&nbsp;a,
+                                  java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrsin(long, java.lang.String, int, int, java.lang.String)"><!-- --></A><H3>
+addgenconstrsin</H3>
+<PRE>
+public static int <B>addgenconstrsin</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrcos(long, java.lang.String, int, int, java.lang.String)"><!-- --></A><H3>
+addgenconstrcos</H3>
+<PRE>
+public static int <B>addgenconstrcos</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addgenconstrtan(long, java.lang.String, int, int, java.lang.String)"><!-- --></A><H3>
+addgenconstrtan</H3>
+<PRE>
+public static int <B>addgenconstrtan</B>(long&nbsp;model,
+                                  java.lang.String&nbsp;name,
+                                  int&nbsp;xind,
+                                  int&nbsp;yind,
+                                  java.lang.String&nbsp;options)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delvars(long, int, int[])"><!-- --></A><H3>
+delvars</H3>
+<PRE>
+public static int <B>delvars</B>(long&nbsp;model,
+                          int&nbsp;len,
+                          int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delconstrs(long, int, int[])"><!-- --></A><H3>
+delconstrs</H3>
+<PRE>
+public static int <B>delconstrs</B>(long&nbsp;model,
+                             int&nbsp;len,
+                             int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delsos(long, int, int[])"><!-- --></A><H3>
+delsos</H3>
+<PRE>
+public static int <B>delsos</B>(long&nbsp;model,
+                         int&nbsp;len,
+                         int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delqconstrs(long, int, int[])"><!-- --></A><H3>
+delqconstrs</H3>
+<PRE>
+public static int <B>delqconstrs</B>(long&nbsp;model,
+                              int&nbsp;len,
+                              int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delgenconstrs(long, int, int[])"><!-- --></A><H3>
+delgenconstrs</H3>
+<PRE>
+public static int <B>delgenconstrs</B>(long&nbsp;model,
+                                int&nbsp;len,
+                                int[]&nbsp;ind)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="chgcoeffs(long, int, int[], int[], double[])"><!-- --></A><H3>
+chgcoeffs</H3>
+<PRE>
+public static int <B>chgcoeffs</B>(long&nbsp;model,
+                            int&nbsp;cnt,
+                            int[]&nbsp;cind,
+                            int[]&nbsp;vind,
+                            double[]&nbsp;val)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addqpterms(long, int, int[], int[], double[])"><!-- --></A><H3>
+addqpterms</H3>
+<PRE>
+public static int <B>addqpterms</B>(long&nbsp;model,
+                             int&nbsp;qnz,
+                             int[]&nbsp;qrow,
+                             int[]&nbsp;qcol,
+                             double[]&nbsp;qval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delq(long)"><!-- --></A><H3>
+delq</H3>
+<PRE>
+public static int <B>delq</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getq(long, int[], int[], int[], double[])"><!-- --></A><H3>
+getq</H3>
+<PRE>
+public static int <B>getq</B>(long&nbsp;model,
+                       int[]&nbsp;qnz,
+                       int[]&nbsp;qrow,
+                       int[]&nbsp;qcol,
+                       double[]&nbsp;qval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setobjective(long, int, double, int, int[], double[], int, int[], int[], double[])"><!-- --></A><H3>
+setobjective</H3>
+<PRE>
+public static int <B>setobjective</B>(long&nbsp;model,
+                               int&nbsp;sense,
+                               double&nbsp;objcon,
+                               int&nbsp;lnz,
+                               int[]&nbsp;lind,
+                               double[]&nbsp;lval,
+                               int&nbsp;qnz,
+                               int[]&nbsp;qrow,
+                               int[]&nbsp;qcol,
+                               double[]&nbsp;qval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setobjectiven(long, int, int, double, double, double, java.lang.String, double, int, int[], double[])"><!-- --></A><H3>
+setobjectiven</H3>
+<PRE>
+public static int <B>setobjectiven</B>(long&nbsp;model,
+                                int&nbsp;index,
+                                int&nbsp;priority,
+                                double&nbsp;weight,
+                                double&nbsp;abstol,
+                                double&nbsp;reltol,
+                                java.lang.String&nbsp;name,
+                                double&nbsp;objcon,
+                                int&nbsp;lnz,
+                                int[]&nbsp;lind,
+                                double[]&nbsp;lval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setpwlobj(long, int, int, double[], double[])"><!-- --></A><H3>
+setpwlobj</H3>
+<PRE>
+public static int <B>setpwlobj</B>(long&nbsp;model,
+                            int&nbsp;var,
+                            int&nbsp;points,
+                            double[]&nbsp;ptval,
+                            double[]&nbsp;ptobj)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clean2(int[], int[], double[])"><!-- --></A><H3>
+clean2</H3>
+<PRE>
+public static int <B>clean2</B>(int[]&nbsp;len,
+                         int[]&nbsp;ind,
+                         double[]&nbsp;val)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clean3(int[], int[], int[], double[])"><!-- --></A><H3>
+clean3</H3>
+<PRE>
+public static int <B>clean3</B>(int[]&nbsp;len,
+                         int[]&nbsp;ind0,
+                         int[]&nbsp;ind1,
+                         double[]&nbsp;val)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeIIS(long)"><!-- --></A><H3>
+computeIIS</H3>
+<PRE>
+public static int <B>computeIIS</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tunemodel(long)"><!-- --></A><H3>
+tunemodel</H3>
+<PRE>
+public static int <B>tunemodel</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="gettuneresult(long, int)"><!-- --></A><H3>
+gettuneresult</H3>
+<PRE>
+public static int <B>gettuneresult</B>(long&nbsp;model,
+                                int&nbsp;i)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="updatemodel(long)"><!-- --></A><H3>
+updatemodel</H3>
+<PRE>
+public static int <B>updatemodel</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reset(long, int)"><!-- --></A><H3>
+reset</H3>
+<PRE>
+public static int <B>reset</B>(long&nbsp;model,
+                        int&nbsp;clearall)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="checkmodel(long)"><!-- --></A><H3>
+checkmodel</H3>
+<PRE>
+public static int <B>checkmodel</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="terminate(long)"><!-- --></A><H3>
+terminate</H3>
+<PRE>
+public static void <B>terminate</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="freemodel(long)"><!-- --></A><H3>
+freemodel</H3>
+<PRE>
+public static void <B>freemodel</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="message(long, java.lang.String)"><!-- --></A><H3>
+message</H3>
+<PRE>
+public static int <B>message</B>(long&nbsp;env,
+                          java.lang.String&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getintparam(long, java.lang.String, int[])"><!-- --></A><H3>
+getintparam</H3>
+<PRE>
+public static int <B>getintparam</B>(long&nbsp;env,
+                              java.lang.String&nbsp;param,
+                              int[]&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getdblparam(long, java.lang.String, double[])"><!-- --></A><H3>
+getdblparam</H3>
+<PRE>
+public static int <B>getdblparam</B>(long&nbsp;env,
+                              java.lang.String&nbsp;param,
+                              double[]&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getstrparam(long, java.lang.String, java.lang.String[])"><!-- --></A><H3>
+getstrparam</H3>
+<PRE>
+public static int <B>getstrparam</B>(long&nbsp;env,
+                              java.lang.String&nbsp;param,
+                              java.lang.String[]&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getintparaminfo(long, java.lang.String, int[])"><!-- --></A><H3>
+getintparaminfo</H3>
+<PRE>
+public static int <B>getintparaminfo</B>(long&nbsp;env,
+                                  java.lang.String&nbsp;param,
+                                  int[]&nbsp;info)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getdblparaminfo(long, java.lang.String, double[])"><!-- --></A><H3>
+getdblparaminfo</H3>
+<PRE>
+public static int <B>getdblparaminfo</B>(long&nbsp;env,
+                                  java.lang.String&nbsp;param,
+                                  double[]&nbsp;info)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getstrparaminfo(long, java.lang.String, java.lang.String[])"><!-- --></A><H3>
+getstrparaminfo</H3>
+<PRE>
+public static int <B>getstrparaminfo</B>(long&nbsp;env,
+                                  java.lang.String&nbsp;param,
+                                  java.lang.String[]&nbsp;info)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setintparam(long, java.lang.String, int)"><!-- --></A><H3>
+setintparam</H3>
+<PRE>
+public static int <B>setintparam</B>(long&nbsp;env,
+                              java.lang.String&nbsp;param,
+                              int&nbsp;newvalue)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setdblparam(long, java.lang.String, double)"><!-- --></A><H3>
+setdblparam</H3>
+<PRE>
+public static int <B>setdblparam</B>(long&nbsp;env,
+                              java.lang.String&nbsp;param,
+                              double&nbsp;newvalue)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setstrparam(long, java.lang.String, java.lang.String)"><!-- --></A><H3>
+setstrparam</H3>
+<PRE>
+public static int <B>setstrparam</B>(long&nbsp;env,
+                              java.lang.String&nbsp;param,
+                              java.lang.String&nbsp;newvalue)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setparam(long, java.lang.String, java.lang.String)"><!-- --></A><H3>
+setparam</H3>
+<PRE>
+public static int <B>setparam</B>(long&nbsp;env,
+                           java.lang.String&nbsp;param,
+                           java.lang.String&nbsp;newvalue)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resetparams(long)"><!-- --></A><H3>
+resetparams</H3>
+<PRE>
+public static int <B>resetparams</B>(long&nbsp;env)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeparams(long, java.lang.String)"><!-- --></A><H3>
+writeparams</H3>
+<PRE>
+public static int <B>writeparams</B>(long&nbsp;env,
+                              java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readparams(long, java.lang.String)"><!-- --></A><H3>
+readparams</H3>
+<PRE>
+public static int <B>readparams</B>(long&nbsp;env,
+                             java.lang.String&nbsp;filename)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createenv(long[], int, int, int)"><!-- --></A><H3>
+createenv</H3>
+<PRE>
+public static int <B>createenv</B>(long[]&nbsp;env,
+                            int&nbsp;major,
+                            int&nbsp;minor,
+                            int&nbsp;tech)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newbatch(long[], long, java.lang.String)"><!-- --></A><H3>
+newbatch</H3>
+<PRE>
+public static int <B>newbatch</B>(long[]&nbsp;batch,
+                           long&nbsp;env,
+                           java.lang.String&nbsp;ID)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadenv(long[], java.lang.String, int, int, int, int)"><!-- --></A><H3>
+loadenv</H3>
+<PRE>
+public static int <B>loadenv</B>(long[]&nbsp;env,
+                          java.lang.String&nbsp;logfilename,
+                          int&nbsp;major,
+                          int&nbsp;minor,
+                          int&nbsp;tech,
+                          int&nbsp;idletimeout)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadclientenv(long[], java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, double, int, int, int)"><!-- --></A><H3>
+loadclientenv</H3>
+<PRE>
+public static int <B>loadclientenv</B>(long[]&nbsp;env,
+                                java.lang.String&nbsp;logfilename,
+                                java.lang.String&nbsp;computeserver,
+                                java.lang.String&nbsp;router,
+                                java.lang.String&nbsp;password,
+                                java.lang.String&nbsp;group,
+                                int&nbsp;CStlsInsecure,
+                                int&nbsp;priority,
+                                double&nbsp;timeout,
+                                int&nbsp;major,
+                                int&nbsp;minor,
+                                int&nbsp;tech)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadcloudenv(long[], java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int)"><!-- --></A><H3>
+loadcloudenv</H3>
+<PRE>
+public static int <B>loadcloudenv</B>(long[]&nbsp;env,
+                               java.lang.String&nbsp;logfilename,
+                               java.lang.String&nbsp;accessID,
+                               java.lang.String&nbsp;secretKey,
+                               java.lang.String&nbsp;pool,
+                               int&nbsp;priority,
+                               int&nbsp;major,
+                               int&nbsp;minor,
+                               int&nbsp;tech)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isqp(long[], java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)"><!-- --></A><H3>
+isqp</H3>
+<PRE>
+public static int <B>isqp</B>(long[]&nbsp;env,
+                       java.lang.String&nbsp;logfilename,
+                       java.lang.String&nbsp;isvname,
+                       java.lang.String&nbsp;appname,
+                       int&nbsp;expiration,
+                       java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startenv(long)"><!-- --></A><H3>
+startenv</H3>
+<PRE>
+public static int <B>startenv</B>(long&nbsp;env)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getenv(long)"><!-- --></A><H3>
+getenv</H3>
+<PRE>
+public static long <B>getenv</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getconcurrentenv(long, int)"><!-- --></A><H3>
+getconcurrentenv</H3>
+<PRE>
+public static long <B>getconcurrentenv</B>(long&nbsp;model,
+                                    int&nbsp;num)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="discardconcurrentenvs(long)"><!-- --></A><H3>
+discardconcurrentenvs</H3>
+<PRE>
+public static void <B>discardconcurrentenvs</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getmultiobjenv(long, int)"><!-- --></A><H3>
+getmultiobjenv</H3>
+<PRE>
+public static long <B>getmultiobjenv</B>(long&nbsp;model,
+                                  int&nbsp;num)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="discardmultiobjenvs(long)"><!-- --></A><H3>
+discardmultiobjenvs</H3>
+<PRE>
+public static void <B>discardmultiobjenvs</B>(long&nbsp;model)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="releaselicense(long)"><!-- --></A><H3>
+releaselicense</H3>
+<PRE>
+public static void <B>releaselicense</B>(long&nbsp;env)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="freeenv(long)"><!-- --></A><H3>
+freeenv</H3>
+<PRE>
+public static void <B>freeenv</B>(long&nbsp;env)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="freebatch(long)"><!-- --></A><H3>
+freebatch</H3>
+<PRE>
+public static void <B>freebatch</B>(long&nbsp;batch)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="geterrormsg(long)"><!-- --></A><H3>
+geterrormsg</H3>
+<PRE>
+public static java.lang.String <B>geterrormsg</B>(long&nbsp;env)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="version(int[])"><!-- --></A><H3>
+version</H3>
+<PRE>
+public static void <B>version</B>(int[]&nbsp;info)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cbgetdblinfo(long, int, int, double[])"><!-- --></A><H3>
+cbgetdblinfo</H3>
+<PRE>
+public static int <B>cbgetdblinfo</B>(long&nbsp;cbdata,
+                               int&nbsp;where,
+                               int&nbsp;what,
+                               double[]&nbsp;val)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cbgetintinfo(long, int, int, int[])"><!-- --></A><H3>
+cbgetintinfo</H3>
+<PRE>
+public static int <B>cbgetintinfo</B>(long&nbsp;cbdata,
+                               int&nbsp;where,
+                               int&nbsp;what,
+                               int[]&nbsp;val)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cbgetstrinfo(long, int, int)"><!-- --></A><H3>
+cbgetstrinfo</H3>
+<PRE>
+public static java.lang.String <B>cbgetstrinfo</B>(long&nbsp;cbdata,
+                                            int&nbsp;where,
+                                            int&nbsp;what)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cbcutorlazy(long, int, double, int[], double[], char, int)"><!-- --></A><H3>
+cbcutorlazy</H3>
+<PRE>
+public static int <B>cbcutorlazy</B>(long&nbsp;cbdata,
+                              int&nbsp;len,
+                              double&nbsp;rhs,
+                              int[]&nbsp;cutind,
+                              double[]&nbsp;cutval,
+                              char&nbsp;sense,
+                              int&nbsp;iscut)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cbsolution(long, double[], double[])"><!-- --></A><H3>
+cbsolution</H3>
+<PRE>
+public static int <B>cbsolution</B>(long&nbsp;cbdata,
+                             double[]&nbsp;sol,
+                             double[]&nbsp;obj)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="stoponemultiobj(long, long, int)"><!-- --></A><H3>
+stoponemultiobj</H3>
+<PRE>
+public static int <B>stoponemultiobj</B>(long&nbsp;model,
+                                  long&nbsp;cbdata,
+                                  int&nbsp;objnum)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fsolve(long, int, int[], double[], int[], int[], double[])"><!-- --></A><H3>
+fsolve</H3>
+<PRE>
+public static int <B>fsolve</B>(long&nbsp;model,
+                         int&nbsp;blen,
+                         int[]&nbsp;bind,
+                         double[]&nbsp;bval,
+                         int[]&nbsp;xlen,
+                         int[]&nbsp;xind,
+                         double[]&nbsp;xval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="binvcolj(long, int, int[], int[], double[])"><!-- --></A><H3>
+binvcolj</H3>
+<PRE>
+public static int <B>binvcolj</B>(long&nbsp;model,
+                           int&nbsp;col,
+                           int[]&nbsp;xlen,
+                           int[]&nbsp;xind,
+                           double[]&nbsp;xval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bsolve(long, int, int[], double[], int[], int[], double[])"><!-- --></A><H3>
+bsolve</H3>
+<PRE>
+public static int <B>bsolve</B>(long&nbsp;model,
+                         int&nbsp;blen,
+                         int[]&nbsp;bind,
+                         double[]&nbsp;bval,
+                         int[]&nbsp;xlen,
+                         int[]&nbsp;xind,
+                         double[]&nbsp;xval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="binvrowi(long, int, int[], int[], double[])"><!-- --></A><H3>
+binvrowi</H3>
+<PRE>
+public static int <B>binvrowi</B>(long&nbsp;model,
+                           int&nbsp;i,
+                           int[]&nbsp;xlen,
+                           int[]&nbsp;xind,
+                           double[]&nbsp;xval)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="basishead(long, int[])"><!-- --></A><H3>
+basishead</H3>
+<PRE>
+public static int <B>basishead</B>(long&nbsp;model,
+                            int[]&nbsp;bhead)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../gurobi/GRBVar.html" title="class in gurobi"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GurobiJni.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GurobiJni.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

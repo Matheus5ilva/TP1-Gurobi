@@ -1,0 +1,665 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GRBCallback
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="GRBCallback";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../gurobi/GRBBatch.html" title="class in gurobi"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../gurobi/GRBCObj.html" title="class in gurobi"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GRBCallback.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GRBCallback.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+gurobi</FONT>
+<BR>
+Class GRBCallback</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../resources/inherit.gif" ALT="extended by "><B>gurobi.GRBCallback</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>GRBCallback</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#where">where</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#GRBCallback()">GRBCallback</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#abort()">abort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#addCut(gurobi.GRBLinExpr, char, double)">addCut</A></B>(<A HREF="../gurobi/GRBLinExpr.html" title="class in gurobi">GRBLinExpr</A>&nbsp;expr,
+       char&nbsp;sense,
+       double&nbsp;rhs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#addLazy(gurobi.GRBLinExpr, char, double)">addLazy</A></B>(<A HREF="../gurobi/GRBLinExpr.html" title="class in gurobi">GRBLinExpr</A>&nbsp;expr,
+        char&nbsp;sense,
+        double&nbsp;rhs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#callback()">callback</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#finalize()">finalize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getDoubleInfo(int)">getDoubleInfo</A></B>(int&nbsp;what)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getIntInfo(int)">getIntInfo</A></B>(int&nbsp;what)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getNodeRel(gurobi.GRBVar)">getNodeRel</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getNodeRel(gurobi.GRBVar[])">getNodeRel</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[]&nbsp;xvars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getNodeRel(gurobi.GRBVar[][])">getNodeRel</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[][]&nbsp;xvars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getSolution(gurobi.GRBVar)">getSolution</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getSolution(gurobi.GRBVar[])">getSolution</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[]&nbsp;xvars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double[][]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getSolution(gurobi.GRBVar[][])">getSolution</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[][]&nbsp;xvars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#getStringInfo(int)">getStringInfo</A></B>(int&nbsp;what)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#setSolution(gurobi.GRBVar[], double[])">setSolution</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[]&nbsp;xvars,
+            double[]&nbsp;sol)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#setSolution(gurobi.GRBVar, double)">setSolution</A></B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>&nbsp;v,
+            double&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#stopOneMultiObj(int)">stopOneMultiObj</A></B>(int&nbsp;objnum)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBCallback.html#useSolution()">useSolution</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="where"><!-- --></A><H3>
+where</H3>
+<PRE>
+protected int <B>where</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="GRBCallback()"><!-- --></A><H3>
+GRBCallback</H3>
+<PRE>
+public <B>GRBCallback</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="callback()"><!-- --></A><H3>
+callback</H3>
+<PRE>
+protected abstract void <B>callback</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="finalize()"><!-- --></A><H3>
+finalize</H3>
+<PRE>
+protected void <B>finalize</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>finalize</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDoubleInfo(int)"><!-- --></A><H3>
+getDoubleInfo</H3>
+<PRE>
+protected double <B>getDoubleInfo</B>(int&nbsp;what)
+                        throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIntInfo(int)"><!-- --></A><H3>
+getIntInfo</H3>
+<PRE>
+protected int <B>getIntInfo</B>(int&nbsp;what)
+                  throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStringInfo(int)"><!-- --></A><H3>
+getStringInfo</H3>
+<PRE>
+protected java.lang.String <B>getStringInfo</B>(int&nbsp;what)
+                                  throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSolution(gurobi.GRBVar)"><!-- --></A><H3>
+getSolution</H3>
+<PRE>
+protected double <B>getSolution</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>&nbsp;v)
+                      throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSolution(gurobi.GRBVar[])"><!-- --></A><H3>
+getSolution</H3>
+<PRE>
+protected double[] <B>getSolution</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[]&nbsp;xvars)
+                        throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSolution(gurobi.GRBVar[][])"><!-- --></A><H3>
+getSolution</H3>
+<PRE>
+protected double[][] <B>getSolution</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[][]&nbsp;xvars)
+                          throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNodeRel(gurobi.GRBVar)"><!-- --></A><H3>
+getNodeRel</H3>
+<PRE>
+protected double <B>getNodeRel</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>&nbsp;v)
+                     throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNodeRel(gurobi.GRBVar[])"><!-- --></A><H3>
+getNodeRel</H3>
+<PRE>
+protected double[] <B>getNodeRel</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[]&nbsp;xvars)
+                       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNodeRel(gurobi.GRBVar[][])"><!-- --></A><H3>
+getNodeRel</H3>
+<PRE>
+protected double[][] <B>getNodeRel</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[][]&nbsp;xvars)
+                         throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSolution(gurobi.GRBVar, double)"><!-- --></A><H3>
+setSolution</H3>
+<PRE>
+protected void <B>setSolution</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>&nbsp;v,
+                           double&nbsp;val)
+                    throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSolution(gurobi.GRBVar[], double[])"><!-- --></A><H3>
+setSolution</H3>
+<PRE>
+protected void <B>setSolution</B>(<A HREF="../gurobi/GRBVar.html" title="class in gurobi">GRBVar</A>[]&nbsp;xvars,
+                           double[]&nbsp;sol)
+                    throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="useSolution()"><!-- --></A><H3>
+useSolution</H3>
+<PRE>
+protected double <B>useSolution</B>()
+                      throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addCut(gurobi.GRBLinExpr, char, double)"><!-- --></A><H3>
+addCut</H3>
+<PRE>
+protected void <B>addCut</B>(<A HREF="../gurobi/GRBLinExpr.html" title="class in gurobi">GRBLinExpr</A>&nbsp;expr,
+                      char&nbsp;sense,
+                      double&nbsp;rhs)
+               throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addLazy(gurobi.GRBLinExpr, char, double)"><!-- --></A><H3>
+addLazy</H3>
+<PRE>
+protected void <B>addLazy</B>(<A HREF="../gurobi/GRBLinExpr.html" title="class in gurobi">GRBLinExpr</A>&nbsp;expr,
+                       char&nbsp;sense,
+                       double&nbsp;rhs)
+                throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="abort()"><!-- --></A><H3>
+abort</H3>
+<PRE>
+protected void <B>abort</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="stopOneMultiObj(int)"><!-- --></A><H3>
+stopOneMultiObj</H3>
+<PRE>
+protected void <B>stopOneMultiObj</B>(int&nbsp;objnum)
+                        throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../gurobi/GRBBatch.html" title="class in gurobi"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../gurobi/GRBCObj.html" title="class in gurobi"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GRBCallback.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GRBCallback.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

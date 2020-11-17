@@ -1,0 +1,1097 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GRBEnv
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="GRBEnv";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../gurobi/GRBConstr.html" title="class in gurobi"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../gurobi/GRBException.html" title="class in gurobi"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GRBEnv.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GRBEnv.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+gurobi</FONT>
+<BR>
+Class GRBEnv</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../resources/inherit.gif" ALT="extended by "><B>gurobi.GRBEnv</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>GRBEnv</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Gurobi environment object. Gurobi models are always associated with an
+ environment. You must create an environment before can you create and
+ populate a model. You will generally only need a single environment
+ object in your program.
+ <p>
+ The methods on environment objects are mainly used to manage Gurobi
+ parameters (e.g., @link GRBEnv#get get, @link GRBEnv#getParamInfo
+ getParamInfo, @link GRBEnv#set set).
+ <p>
+ While the Java garbage collector will eventually collect an unused
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#GRBEnv()">GRBEnv</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Gurobi environment (with logging disabled).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#GRBEnv(boolean)">GRBEnv</A></B>(boolean&nbsp;empty)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an empty Gurobi environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#GRBEnv(java.lang.String)">GRBEnv</A></B>(java.lang.String&nbsp;logFileName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Gurobi environment (with logging enabled).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#GRBEnv(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)">GRBEnv</A></B>(java.lang.String&nbsp;s0,
+       java.lang.String&nbsp;s1,
+       java.lang.String&nbsp;s2,
+       int&nbsp;i1,
+       java.lang.String&nbsp;s3)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#GRBEnv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)">GRBEnv</A></B>(java.lang.String&nbsp;logfilename,
+       java.lang.String&nbsp;accessID,
+       java.lang.String&nbsp;secretKey,
+       java.lang.String&nbsp;pool,
+       int&nbsp;priority)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a Gurobi environment on Gurobi Instant Cloud.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#GRBEnv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, double)">GRBEnv</A></B>(java.lang.String&nbsp;logFileName,
+       java.lang.String&nbsp;computeServer,
+       java.lang.String&nbsp;router,
+       java.lang.String&nbsp;password,
+       java.lang.String&nbsp;group,
+       int&nbsp;CStlsInsecure,
+       int&nbsp;priority,
+       double&nbsp;timeout)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a client Gurobi environment on a compute server.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#dispose()">dispose</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Release the resources associated with a @code GRBEnv object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#finalize()">finalize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#get(gurobi.GRB.DoubleParam)">get</A></B>(<A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A>&nbsp;param)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query the value of a double-valued parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#get(gurobi.GRB.IntParam)">get</A></B>(<A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A>&nbsp;param)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query the value of an int-valued parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#get(gurobi.GRB.StringParam)">get</A></B>(<A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A>&nbsp;param)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query the value of a string-valued parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#getErrorMsg()">getErrorMsg</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query the error message for the most recent exception associated with
+ this environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#getParamInfo(gurobi.GRB.DoubleParam, double[])">getParamInfo</A></B>(<A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A>&nbsp;param,
+             double[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain detailed information about a double parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#getParamInfo(gurobi.GRB.IntParam, int[])">getParamInfo</A></B>(<A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A>&nbsp;param,
+             int[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain detailed information about an integer parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#getParamInfo(gurobi.GRB.StringParam, java.lang.String[])">getParamInfo</A></B>(<A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A>&nbsp;param,
+             java.lang.String[]&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain detailed information about a string parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#message(java.lang.String)">message</A></B>(java.lang.String&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write a message to the console and the log file.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#modelCntDecrease()">modelCntDecrease</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#modelCntIncrease()">modelCntIncrease</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#modelCntZero()">modelCntZero</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#readParams(java.lang.String)">readParams</A></B>(java.lang.String&nbsp;paramFile)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read new parameter settings from a file.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#release()">release</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Release the license associated with this environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#resetParams()">resetParams</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset all parameters to their default values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#set(gurobi.GRB.DoubleParam, double)">set</A></B>(<A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A>&nbsp;param,
+    double&nbsp;newval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the value of a double-valued parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#set(gurobi.GRB.IntParam, int)">set</A></B>(<A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A>&nbsp;param,
+    int&nbsp;newval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the value of an int-valued parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#set(gurobi.GRB.StringParam, java.lang.String)">set</A></B>(<A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A>&nbsp;param,
+    java.lang.String&nbsp;newval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the value of a string-valued parameter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#set(java.lang.String, java.lang.String)">set</A></B>(java.lang.String&nbsp;param,
+    java.lang.String&nbsp;newval)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the value of any parameter using strings alone.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#start()">start</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start an empty environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../gurobi/GRBEnv.html#writeParams(java.lang.String)">writeParams</A></B>(java.lang.String&nbsp;paramFile)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write all non-default parameter settings to a file.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="GRBEnv()"><!-- --></A><H3>
+GRBEnv</H3>
+<PRE>
+public <B>GRBEnv</B>()
+       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Create a Gurobi environment (with logging disabled). This method will
+ also populate any parameter (<tt>ComputeServer</tt>,
+ <tt>TokenServer</tt>, <tt>ServerPassword</tt>, etc.) specified in your
+ <tt>gurobi.lic</tt> file. This method will also check the current
+ working directory for a file named <tt>gurobi.env</tt>, and it will
+ attempt to read parameter settings from this file if it exists. The
+ file should be in @literal PRM format (briefly, each line should
+ contain a parameter name, followed by the desired value for that
+ parameter). <p> In general, you should aim to create a single Gurobi
+ environment in your program, even if you plan to work with multiple
+ models. Reusing one environment is much more efficient than creating
+ and destroying multiple environments. The one exception is if you are
+ writing a multi-threaded program, since environments are not thread
+ safe. In this case, you will need a separate environment for each of
+ your threads.
+<P>
+<DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DL>
+<HR>
+
+<A NAME="GRBEnv(java.lang.String)"><!-- --></A><H3>
+GRBEnv</H3>
+<PRE>
+public <B>GRBEnv</B>(java.lang.String&nbsp;logFileName)
+       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Create a Gurobi environment (with logging enabled). This method will
+ also populate any parameter (<tt>ComputeServer</tt>,
+ <tt>TokenServer</tt>, <tt>ServerPassword</tt>, etc.) specified in your
+ <tt>gurobi.lic</tt> file. This method will also check the current
+ working directory for a file named <tt>gurobi.env</tt>, and it will
+ attempt to read parameter settings from this file if it exists. The
+ file should be in @literal PRM format (briefly, each line should
+ contain a parameter name, followed by the desired value for that
+ parameter). <p> In general, you should aim to create a single Gurobi
+ environment in your program, even if you plan to work with multiple
+ models. Reusing one environment is much more efficient than creating
+ and destroying multiple environments. The one exception is if you are
+ writing a multi-threaded program, since environments are not thread
+ safe. In this case, you will need a separate environment for each of
+ your threads.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>logFileName</CODE> - The desired log file name.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DL>
+<HR>
+
+<A NAME="GRBEnv(boolean)"><!-- --></A><H3>
+GRBEnv</H3>
+<PRE>
+public <B>GRBEnv</B>(boolean&nbsp;empty)
+       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Create an empty Gurobi environment. Use @link GRBEnv#start start to
+ start the environment. <p> If the environment is not empty, This
+ method will also populate any parameter (<tt>ComputeServer</tt>,
+ <tt>TokenServer</tt>, <tt>ServerPassword</tt>, etc.) specified in your
+ <tt>gurobi.lic</tt> file. This method will also check the current
+ working directory for a file named <tt>gurobi.env</tt>, and it will
+ attempt to read parameter settings from this file if it exists. The
+ file should be in @literal PRM format (briefly, each line should
+ contain a parameter name, followed by the desired value for that
+ parameter). <p> In general, you should aim to create a single Gurobi
+ environment in your program, even if you plan to work with multiple
+ models. Reusing one environment is much more efficient than creating
+ and destroying multiple environments. The one exception is if you are
+ writing a multi-threaded program, since environments are not thread
+ safe. In this case, you will need a separate environment for each of
+ your threads.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>empty</CODE> - Indicates whether the environment should be empty. You should use
+               <tt>empty=true</tt> if you want to set parameters before actually
+               starting the environment. This can be useful if you want to connect to
+               a Compute Server, a Token Server, the Gurobi Instant Cloud or a
+               Cluster Manager. See the Environment~Section for more details.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DL>
+<HR>
+
+<A NAME="GRBEnv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, double)"><!-- --></A><H3>
+GRBEnv</H3>
+<PRE>
+public <B>GRBEnv</B>(java.lang.String&nbsp;logFileName,
+              java.lang.String&nbsp;computeServer,
+              java.lang.String&nbsp;router,
+              java.lang.String&nbsp;password,
+              java.lang.String&nbsp;group,
+              int&nbsp;CStlsInsecure,
+              int&nbsp;priority,
+              double&nbsp;timeout)
+       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Create a client Gurobi environment on a compute server. This method
+ will also check the current working directory for a file named
+ <tt>gurobi.env</tt>, and it will attempt to read parameter settings
+ from this file if it exists. The file should be in @literal PRM format
+ (briefly, each line should contain a parameter name, followed by the
+ desired value for that parameter). <p> In general, you should aim to
+ create a single Gurobi environment in your program, even if you plan
+ to work with multiple models. Reusing one environment is much more
+ efficient than creating and destroying multiple environments. The one
+ exception is if you are writing a multi-threaded program, since
+ environments are not thread safe. In this case, you will need a
+ separate environment for each of your threads.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>logFileName</CODE> - The name of the log file for this environment. Pass an empty string
+                       for no log file.<DD><CODE>computeServer</CODE> - A Compute Server. You can refer to the server using its name or its IP
+                       address. If you are using a non-default port, the server name should
+                       be followed by the port number (e.g., @literal server1:61000)<DD><CODE>router</CODE> - The router for a Compute Server cluster. A router can be used to
+                       improve the robustness of a Compute Server deployment. You should
+                       refer to the router using either its name or its IP address. If no
+                       router is used (which is the typical case), pass an empty string.<DD><CODE>password</CODE> - The password for gaining access to the specified Compute Server
+                       cluster. Pass an empty string if no password is required.<DD><CODE>group</CODE> - The name of the Compute Server group.<DD><CODE>CStlsInsecure</CODE> - Indicates whether to use insecure mode in the TLS (Transport Layer
+                       Security). Set this to 0 unless your server administrator tells you
+                       otherwise.<DD><CODE>priority</CODE> - The priority of the job. Priorities must be between -100 and 100, with
+                       a default value of 0 (by convention). Higher priority jobs are chosen
+                       from the server job queue before lower priority jobs. Depending on the
+                       configuration of the server, a job with priority 100 runs immediately,
+                       bypassing the job queue and ignoring the job limit on the server. You
+                       should exercise caution with priority 100 jobs, since they can
+                       severely overload a server, which can cause jobs to fail, and in
+                       extreme cases can cause the server to crash. This behavior is managed
+                       by the <tt>HARDJOBLIMIT</tt>, and is disabled by default. Refer to the
+                       <a href="../remoteservices/remoteservices.html">Gurobi Remote Services
+                       Reference Manual</a> for more information on starting Compute Server
+                       options.<DD><CODE>timeout</CODE> - Queue timeout (in seconds). If the job doesn't reach the front of the
+                       queue before the specified timeout, the call will exit with a @literal
+                       JOB_REJECTED error. Use -1 to indicate that the call should never
+                       timeout.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DL>
+<HR>
+
+<A NAME="GRBEnv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)"><!-- --></A><H3>
+GRBEnv</H3>
+<PRE>
+public <B>GRBEnv</B>(java.lang.String&nbsp;logfilename,
+              java.lang.String&nbsp;accessID,
+              java.lang.String&nbsp;secretKey,
+              java.lang.String&nbsp;pool,
+              int&nbsp;priority)
+       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Create a Gurobi environment on Gurobi Instant Cloud. This method will
+ also check the current working directory for a file named
+ <tt>gurobi.env</tt>, and it will attempt to read parameter settings
+ from this file if it exists. The file should be in @literal PRM format
+ (briefly, each line should contain a parameter name, followed by the
+ desired value for that parameter). <p> In general, you should aim to
+ create a single Gurobi environment in your program, even if you plan
+ to work with multiple models. Reusing one environment is much more
+ efficient than creating and destroying multiple environments. The one
+ exception is if you are writing a multi-threaded program, since
+ environments are not thread safe. In this case, you will need a
+ separate environment for each of your threads.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>logfilename</CODE> - The name of the log file for this environment. May be @literal NULL
+                     (or an empty string), in which case no log file is created.<DD><CODE>accessID</CODE> - The access ID for your Gurobi Instant Cloud license. This can be
+                     retrieved from the Gurobi Instant Cloud website. When used in
+                     combination with your @literal secretKey, this allows you to launch
+                     Instant Cloud instances and submit jobs to them.<DD><CODE>secretKey</CODE> - The secret key for your Gurobi Instant Cloud license. This can be
+                     retrieved from the Gurobi Instant Cloud website. When used in
+                     combination with your @literal accessID, this allows you to launch
+                     Instant Cloud instances and submit jobs to them. Note that you should
+                     keep your secret key private.<DD><CODE>pool</CODE> - The machine pool. Machine pools allow you to create fixed
+                     configurations on the Instant Cloud website (capturing things like
+                     type of machine, geographic region, etc.), and then launch and share
+                     machines from client programs without having to restart the
+                     configuration information each time you launch a machine. May be<DD><CODE>priority</CODE> - The priority of the job. Priorities must be between -100 and 100, with
+                     a default value of 0 (by convention). Higher priority jobs are chosen
+                     from the server job queue before lower priority jobs.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DL>
+<HR>
+
+<A NAME="GRBEnv(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)"><!-- --></A><H3>
+GRBEnv</H3>
+<PRE>
+public <B>GRBEnv</B>(java.lang.String&nbsp;s0,
+              java.lang.String&nbsp;s1,
+              java.lang.String&nbsp;s2,
+              int&nbsp;i1,
+              java.lang.String&nbsp;s3)
+       throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="start()"><!-- --></A><H3>
+start</H3>
+<PRE>
+public void <B>start</B>()
+           throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Start an empty environment. If the environment has already been
+ started, this method will do nothing. If the call fails, the
+ environment will have the same state as it had before the call to this
+ method.
+ <p>
+ This method will also populate any parameter (<tt>ComputeServer</tt>,
+ <tt>TokenServer</tt>, <tt>ServerPassword</tt>, etc.) specified in your
+ <tt>gurobi.lic</tt> file. This method will also check the current
+ working directory for a file named <tt>gurobi.env</tt>, and it will
+ attempt to read parameter settings from this file if it exists. The
+ file should be in @literal PRM format (briefly, each line should
+ contain a parameter name, followed by the desired value for that
+ parameter). After that, it will apply all parameter changes specified
+ by the user prior to this call. Note that this might overwrite
+ parameters set in the license file, or in the <tt>gurobi.env</tt>
+ file, if present.
+ <p>
+ After all these changes are performed, the code will actually activate
+ the environment, and make it ready to work with models.
+ <p>
+ In general, you should aim to create a single Gurobi environment in
+ your program, even if you plan to work with multiple models. Reusing
+ one environment is much more efficient than creating and destroying
+ multiple environments. The one exception is if you are writing a
+ multi-threaded program, since environments are not thread safe. In
+ this case, you will need a separate environment for each of your
+ threads.
+ <p>
+ Please consult the parameter section for a complete list of Gurobi
+ parameters, including descriptions of their purposes and their
+ minimum, maximum, and default values.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="release()"><!-- --></A><H3>
+release</H3>
+<PRE>
+public void <B>release</B>()</PRE>
+<DL>
+<DD>Release the license associated with this environment. You will no
+ longer be able to call @link GRBModel#optimize optimize on models
+ created with this environment after the license has been released.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dispose()"><!-- --></A><H3>
+dispose</H3>
+<PRE>
+public void <B>dispose</B>()
+             throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Release the resources associated with a @code GRBEnv object. While the
+ Java garbage collector will eventually reclaim these resources, we
+ recommend that you call the @code dispose method when you are done
+ using an environment if your program creates more than one.
+ <p>
+ The @code dispose method on a @code GRBEnv should be called only after
+ you have called @code dispose on all of the models that were created
+ within that environment. You should not attempt to use a @code GRBEnv
+ object after calling @code dispose.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="finalize()"><!-- --></A><H3>
+finalize</H3>
+<PRE>
+protected void <B>finalize</B>()
+                 throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>finalize</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="message(java.lang.String)"><!-- --></A><H3>
+message</H3>
+<PRE>
+public void <B>message</B>(java.lang.String&nbsp;message)
+             throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Write a message to the console and the log file.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>message</CODE> - Print a message to the console and to the log file. Note that this
+                 call has no effect unless the @literal OutputFlag parameter is set.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="get(gurobi.GRB.IntParam)"><!-- --></A><H3>
+get</H3>
+<PRE>
+public int <B>get</B>(<A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A>&nbsp;param)
+        throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Query the value of an int-valued parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter being queried. Please consult the parameter section for
+               a complete list of Gurobi parameters, including descriptions of their
+               purposes and their minimum, maximum, and default values.
+<DT><B>Returns:</B><DD>The current value of the requested parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="get(gurobi.GRB.DoubleParam)"><!-- --></A><H3>
+get</H3>
+<PRE>
+public double <B>get</B>(<A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A>&nbsp;param)
+           throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Query the value of a double-valued parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter being queried. Please consult the parameter section for
+               a complete list of Gurobi parameters, including descriptions of their
+               purposes and their minimum, maximum, and default values.
+<DT><B>Returns:</B><DD>The current value of the requested parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="get(gurobi.GRB.StringParam)"><!-- --></A><H3>
+get</H3>
+<PRE>
+public java.lang.String <B>get</B>(<A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A>&nbsp;param)
+                     throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Query the value of a string-valued parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter being queried. Please consult the parameter section for
+               a complete list of Gurobi parameters, including descriptions of their
+               purposes and their minimum, maximum, and default values.
+<DT><B>Returns:</B><DD>The current value of the requested parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(gurobi.GRB.IntParam, int)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(<A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A>&nbsp;param,
+                int&nbsp;newval)
+         throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Set the value of an int-valued parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter being modified. Please consult the parameter section for
+                a complete list of Gurobi parameters, including descriptions of their
+                purposes and their minimum, maximum, and default values.<DD><CODE>newval</CODE> - The desired new value of the parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(gurobi.GRB.DoubleParam, double)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(<A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A>&nbsp;param,
+                double&nbsp;newval)
+         throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Set the value of a double-valued parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter being modified. Please consult the parameter section for
+                a complete list of Gurobi parameters, including descriptions of their
+                purposes and their minimum, maximum, and default values.<DD><CODE>newval</CODE> - The desired new value of the parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(gurobi.GRB.StringParam, java.lang.String)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(<A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A>&nbsp;param,
+                java.lang.String&nbsp;newval)
+         throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Set the value of a string-valued parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter being modified. Please consult the parameter section for
+                a complete list of Gurobi parameters, including descriptions of their
+                purposes and their minimum, maximum, and default values.<DD><CODE>newval</CODE> - The desired new value of the parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="set(java.lang.String, java.lang.String)"><!-- --></A><H3>
+set</H3>
+<PRE>
+public void <B>set</B>(java.lang.String&nbsp;param,
+                java.lang.String&nbsp;newval)
+         throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Set the value of any parameter using strings alone.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The name of the parameter being modified. Please consult the parameter
+                section for a complete list of Gurobi parameters, including
+                descriptions of their purposes and their minimum, maximum, and default
+                values.<DD><CODE>newval</CODE> - The desired new value of the parameter.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParamInfo(gurobi.GRB.IntParam, int[])"><!-- --></A><H3>
+getParamInfo</H3>
+<PRE>
+public void <B>getParamInfo</B>(<A HREF="../gurobi/GRB.IntParam.html" title="enum in gurobi">GRB.IntParam</A>&nbsp;param,
+                         int[]&nbsp;info)
+                  throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Obtain detailed information about an integer parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter of interest. Please consult the parameter section for a
+               complete list of Gurobi parameters, including descriptions of their
+               purposes and their minimum, maximum, and default values.<DD><CODE>info</CODE> - The returned information. The result will contain four entries: the
+               current value of the parameter, the minimum allowed value, the maximum
+               allowed value, and the default value.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParamInfo(gurobi.GRB.DoubleParam, double[])"><!-- --></A><H3>
+getParamInfo</H3>
+<PRE>
+public void <B>getParamInfo</B>(<A HREF="../gurobi/GRB.DoubleParam.html" title="enum in gurobi">GRB.DoubleParam</A>&nbsp;param,
+                         double[]&nbsp;info)
+                  throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Obtain detailed information about a double parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter of interest. Please consult the parameter section for a
+               complete list of Gurobi parameters, including descriptions of their
+               purposes and their minimum, maximum, and default values.<DD><CODE>info</CODE> - The returned information. The result will contain four entries: the
+               current value of the parameter, the minimum allowed value, the maximum
+               allowed value, and the default value.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParamInfo(gurobi.GRB.StringParam, java.lang.String[])"><!-- --></A><H3>
+getParamInfo</H3>
+<PRE>
+public void <B>getParamInfo</B>(<A HREF="../gurobi/GRB.StringParam.html" title="enum in gurobi">GRB.StringParam</A>&nbsp;param,
+                         java.lang.String[]&nbsp;info)
+                  throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Obtain detailed information about a string parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>param</CODE> - The parameter of interest. Please consult the parameter section for a
+               complete list of Gurobi parameters, including descriptions of their
+               purposes and their minimum, maximum, and default values.<DD><CODE>info</CODE> - The returned information. The result will contain two entries: the
+               current value of the parameter and the default value.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resetParams()"><!-- --></A><H3>
+resetParams</H3>
+<PRE>
+public void <B>resetParams</B>()
+                 throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Reset all parameters to their default values.
+ <p>
+ Please consult the parameter section for a complete list of Gurobi
+ parameters, including descriptions of their purposes and their
+ minimum, maximum, and default values.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeParams(java.lang.String)"><!-- --></A><H3>
+writeParams</H3>
+<PRE>
+public void <B>writeParams</B>(java.lang.String&nbsp;paramFile)
+                 throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Write all non-default parameter settings to a file.
+ <p>
+ Please consult the parameter section for a complete list of Gurobi
+ parameters, including descriptions of their purposes and their
+ minimum, maximum, and default values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>paramFile</CODE> - Name of the file to which non-default parameter settings should be
+                   written. The previous contents are overwritten.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readParams(java.lang.String)"><!-- --></A><H3>
+readParams</H3>
+<PRE>
+public void <B>readParams</B>(java.lang.String&nbsp;paramFile)
+                throws <A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></PRE>
+<DL>
+<DD>Read new parameter settings from a file.
+ <p>
+ Please consult the parameter section for a complete list of Gurobi
+ parameters, including descriptions of their purposes and their
+ minimum, maximum, and default values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>paramFile</CODE> - Name of the file containing parameter settings. Parameters should be
+                   listed one per line, with the parameter name first and the desired
+                   value second. For example: <p> Blank lines and lines that begin with
+                   the hash symbol are ignored.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../gurobi/GRBException.html" title="class in gurobi">GRBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getErrorMsg()"><!-- --></A><H3>
+getErrorMsg</H3>
+<PRE>
+public java.lang.String <B>getErrorMsg</B>()</PRE>
+<DL>
+<DD>Query the error message for the most recent exception associated with
+ this environment.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The error string.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="modelCntIncrease()"><!-- --></A><H3>
+modelCntIncrease</H3>
+<PRE>
+protected void <B>modelCntIncrease</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="modelCntDecrease()"><!-- --></A><H3>
+modelCntDecrease</H3>
+<PRE>
+protected void <B>modelCntDecrease</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="modelCntZero()"><!-- --></A><H3>
+modelCntZero</H3>
+<PRE>
+protected boolean <B>modelCntZero</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../gurobi/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../gurobi/GRBConstr.html" title="class in gurobi"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../gurobi/GRBException.html" title="class in gurobi"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?gurobi/GRBEnv.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GRBEnv.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>
