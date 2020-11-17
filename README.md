@@ -4,8 +4,8 @@
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
- <a href="#video">Vídeo</a> •
- <a href="#tecnologia">Tecnologias</a> • 
+ <a href="#vídeo">Vídeo</a> •
+ <a href="#tecnologias">Tecnologias</a> • 
  <a href="#requisitos">Pré Requisitos</a> • 
  <a href="#autor">Autor</a> • 
 </p>
